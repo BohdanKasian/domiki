@@ -1,0 +1,23 @@
+@import "menu"
+@import "normalize"
+@import "reset"
+@import "mixin/_mixinFlexWebkit.scss"
+
+
+body
+  width: 2000px
+
+.wrapper
+  width: 90%
+  max-width: 956px
+  margin: 0 auto
+  @media screen and (max-width: 764px)
+    width: 100%
+    padding: 0 5px
+
+header
+  background: url("../images/main/bg-header.jpg") no-repeat center top
+  height: 100vh
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover

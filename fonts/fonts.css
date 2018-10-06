@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: local('☺'),
+    url('Montserrat-Semibold.woff') format('woff'),
+    url('Montserrat-Semibold.woff2') format('woff2'),
+    url('Montserrat-Semibold.eot') format('eot'),
+    url('Montserrat-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

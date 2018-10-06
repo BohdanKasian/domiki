@@ -1,0 +1,68 @@
+@import "mixin/_mixinFlexWebkit.scss"
+
+header
+  .flex__column
+    @include flexbox
+    @include flex-direction(column)
+  .menu
+    @include justify-content(space-around)
+    background-color: #4b3939
+    text-align: center
+    height: 100vh
+    position: absolute
+    left: 31.9%
+    max-width: 166px
+    width: 12%
+    min-width: 117px
+    a
+      color: #e4b05c
+      font-size: 13px
+      &:hover
+        transition: all ease 0.3s
+        opacity: 0.8
+  .logo_bg
+    position: relative
+    width: 100%
+    max-height: 20vh
+    max-width: 20vh
+    height: 30%
+    background-color: white
+    border-radius: 100%
+    margin: 0 auto
+    &:before
+      content: ""
+      position: absolute
+      background: url("../images/logo.svg") no-repeat center top
+      width: 90%
+      height: 90%
+      left: 5%
+      background-size: contain
+      top: 12%
+  nav
+    width: 75%
+    margin: 0 auto
+    a
+      border-bottom: 1px solid #5b4b4b
+      padding-bottom: 1.5vh
+      padding-top: 1.5vh
+      &:last-child
+        border-bottom: none
+  .call
+    margin-bottom: 4vh
+    p
+      padding-bottom: 2vh
+      color: #e4b05c
+    .phone
+      border-bottom: 1px solid #5b4b4b
+      letter-spacing: 0.06rem
+      padding-bottom: 4%
+    .button_box
+      padding-top: 10.5%
+      .button
+        text-transform: uppercase
+        font-size: 10px
+        color: #4e3c3c
+        margin-top: 6%
+        background-color: #e4b05c
+        padding: 3.5% 7.9%
+        margin-right: 3%
