@@ -1,19 +1,22 @@
 @import "mixin/_mixinFlexWebkit.scss"
 
+.flex__column
+  @include flexbox
+  @include flex-direction(column)
+
 header
-  .flex__column
-    @include flexbox
-    @include flex-direction(column)
   .menu
     @include justify-content(space-around)
     background-color: #4b3939
     text-align: center
     height: 100vh
-    position: absolute
-    left: 31.9%
-    max-width: 166px
-    width: 12%
-    min-width: 117px
+    position: fixed
+    left: 21.5%
+    min-width: 127px
+    @media screen and (min-height: 624px)
+      padding: 0 13px
+    @media screen and (max-width: 1024px)
+      left: 1%
     a
       color: #e4b05c
       font-size: 13px
@@ -22,10 +25,10 @@ header
         opacity: 0.8
   .logo_bg
     position: relative
-    width: 100%
-    max-height: 20vh
-    max-width: 20vh
-    height: 30%
+    width: 21vh
+    max-height: 220px
+    max-width: 220px
+    height: 21vh
     background-color: white
     border-radius: 100%
     margin: 0 auto

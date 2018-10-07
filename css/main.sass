@@ -1,19 +1,22 @@
 @import "menu"
+@import "form"
 @import "normalize"
 @import "reset"
 @import "mixin/_mixinFlexWebkit.scss"
 
-
 body
-  width: 2000px
+  font-family: "OldKingC", sans-serif
 
 .wrapper
-  width: 90%
+  width: 56%
   max-width: 956px
-  margin: 0 auto
-  @media screen and (max-width: 764px)
-    width: 100%
+  margin: 0 auto 0 42%
+  @media screen and (max-width: 1024px)
+    width: 75%
     padding: 0 5px
+    margin: 0 auto 0 22%
+  @media screen and (min-width: 1440px)
+    margin: 0 auto 0 34%
 
 header
   background: url("../images/main/bg-header.jpg") no-repeat center top
@@ -21,3 +24,173 @@ header
   -webkit-background-size: cover
   -moz-background-size: cover
   background-size: cover
+
+.flex__wrap
+  @include flexbox
+  @include flex-wrap(wrap)
+  @include justify-content(space-around)
+
+.line
+  position: relative
+  border: 1px solid #e8ddd3
+  width: 100%
+  margin-top: 1%
+  .icon_img
+    border-radius: 50%
+    position: absolute
+    left: 43.5%
+    top: -46px
+    width: 105px
+    height: 105px
+    background-color: white
+    &::before
+      content: ""
+      width: 90%
+      height: 90%
+      position: absolute
+      background-size: contain
+
+
+
+.offer
+  color: #352b2b
+  .line
+    .icon_img
+      &::before
+        background: url("../images/main/icon-offer.png") no-repeat center
+  h2
+    font-size: 14px
+    margin-top: 47px
+    line-height: 2rem
+  .offer_content
+    padding: 3% 2% 0 0
+    .content
+      text-align: center
+      margin-right: 3%
+      font-size: 18px
+      color: #4a3838
+      height: 272px
+      div
+        &:first-child
+          border-radius: 50%
+          width: 211px
+          height: 211px
+      .houses_img
+        background: url("../images/main/houses-bg.jpg") no-repeat center
+        background-size: cover
+      .fishing_img
+        background: url("../images/main/fishing-bg.jpg") no-repeat center
+        background-size: cover
+      .bathhouse_img
+        background: url("../images/main/bathhouse-bg.jpg") no-repeat center
+        background-size: cover
+      .waterfalls_img
+        background: url("../images/main/waterfalls-bg.jpg") no-repeat center
+        background-size: cover
+      .shooting_img
+        background: url("../images/main/shooting-bg.jpg") no-repeat center
+        background-size: cover
+      .excursions_img
+        background: url("../images/main/excursions-bg.jpg") no-repeat center
+        background-size: cover
+      .icon
+        border-radius: 50%
+        background-color: #fcf8f0
+        position: relative
+        width: 80px
+        height: 80px
+        left: 6%
+        bottom: 25%
+        &::before
+          content: ""
+          position: absolute
+          background-size: contain
+          width: 70%
+          height: 70%
+          left: 13%
+          bottom: 15%
+      .icon.houses
+        &::before
+          background: url("../images/main/houses-icon.png") no-repeat center
+      .icon.fishing
+        &::before
+          background: url("../images/main/fishing-icon.png") no-repeat center
+      .icon.bathhouse
+        &::before
+          background: url("../images/main/bathhouse-icon.png") no-repeat center
+      .icon.waterfalls
+        &::before
+          background: url("../images/main/waterfalls-icon.png") no-repeat center
+      .icon.shooting
+        &::before
+          background: url("../images/main/shooting-icon.png") no-repeat center
+      .icon.excursions
+        &::before
+          background: url("../images/main/excursions-icon.png") no-repeat center
+      p
+        position: relative
+        bottom: 25%
+      .excursions_text__width
+        width: 50%
+        margin: 0 auto
+
+.flex__around
+  @include flexbox
+  @include justify-content(space-around)
+
+section.houses
+  margin-top: 4%
+  background-color: #fcf8f0
+  text-align: center
+  padding-bottom: 4%
+  .line
+    .icon_img
+      background-color: #fcf8f0
+      &::before
+        left: 7%
+        background: url("../images/main/sectionHouses-icon.png") no-repeat center
+  h2
+    text-transform: uppercase
+    font-size: 30px
+    margin-top: 2.5%
+    line-height: 6rem
+  .border_inside
+    background-color: #efeae3
+    overflow: hidden
+    position: relative
+    padding: 40px
+    margin-bottom: 10%
+    &::before,
+    &::after,
+    .border_inside_bottom::before,
+    .border_inside_bottom::after
+      position: absolute
+      background-color: #fcf8f0
+      border-radius: 50%
+      content: ""
+      width: 80px
+      height: 80px
+    .border_inside_bottom
+      content: ""
+      width: 100%
+      height: 100%
+      &::before,
+      &::after
+        bottom: -40px
+      &::before
+        left: -40px
+      &::after
+        right: -40px
+    &::before,
+    &::after
+      top: -40px
+    &::before
+      left: -40px
+    &::after
+      right: -40px
+  p
+    font-family: ArialI, sans-serif
+    color: #1b97c3
+    width: 45%
+    margin: 0 auto
+
