@@ -1,11 +1,18 @@
-@import "menu"
-@import "form"
 @import "normalize"
 @import "reset"
+@import "menu"
+@import "form"
+@import "reviews"
+@import "galleryMain"
+@import "footer"
 @import "mixin/_mixinFlexWebkit.scss"
 
 body
   font-family: "OldKingC", sans-serif
+
+a
+  &:hover
+    opacity: 0.9
 
 .wrapper
   width: 56%
@@ -49,9 +56,6 @@ header
       height: 90%
       position: absolute
       background-size: contain
-
-
-
 .offer
   color: #352b2b
   .line
@@ -64,9 +68,10 @@ header
     line-height: 2rem
   .offer_content
     padding: 3% 2% 0 0
+    >a
+      margin-right: 3% 
     .content
       text-align: center
-      margin-right: 3%
       font-size: 18px
       color: #4a3838
       height: 272px
@@ -137,23 +142,26 @@ header
 .flex__around
   @include flexbox
   @include justify-content(space-around)
+.title
+  text-transform: uppercase
+  font-size: 30px
+  line-height: 6rem
+  text-align: center
+  color: #4a3838
 
 section.houses
   margin-top: 4%
   background-color: #fcf8f0
   text-align: center
-  padding-bottom: 4%
+  padding-bottom: 3.3%
   .line
     .icon_img
       background-color: #fcf8f0
       &::before
         left: 7%
         background: url("../images/main/sectionHouses-icon.png") no-repeat center
-  h2
-    text-transform: uppercase
-    font-size: 30px
+  .title
     margin-top: 2.5%
-    line-height: 6rem
   .border_inside
     background-color: #efeae3
     overflow: hidden
@@ -189,8 +197,15 @@ section.houses
     &::after
       right: -40px
   p
-    font-family: ArialI, sans-serif
+    font-family: "Arial-I"
     color: #1b97c3
-    width: 45%
+    width: 50%
     margin: 0 auto
 
+.flex_items__start
+  @include flexbox
+  @include align-items(flex-start)
+
+.flex__between
+  @include flexbox
+  @include justify-content(space-between)

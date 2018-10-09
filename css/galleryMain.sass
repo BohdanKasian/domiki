@@ -1,0 +1,62 @@
+@import "mixin/_mixinFlexWebkit.scss"
+
+section.gallery
+  background-color: #fcf8f0
+  text-align: center
+  padding-bottom: 2%
+  .line
+    margin-top: 3%
+    .icon_img
+      background-color: #fcf8f0
+      &::before
+        background: url("../images/gallery/gallery-icon.png") no-repeat
+        left: 19%
+        top: 21%
+  .title
+    margin-top: 3%
+  .gallery_content
+    a
+      p
+        font-family: "Arial-I"
+        color: #1b97c3
+        font-size: 18px
+        margin-top: 6%
+    .bg-img.nature
+      &::before
+        left: -4px
+      &::after
+        left: 7px
+        bottom: -1px
+    .bg-img.sights
+      &::before
+        top: -12px
+        left: 0
+      &::after
+        left: 15px
+        top: 3px
+    .bg-img.waterfalls
+      &::before
+        top: 28px
+        left: 27px
+      &::after
+        left: 12px
+        top: 10px
+    .bg-img
+      display: block
+      width: 300px
+      height: 300px
+      border-radius: 50%
+      position: relative
+      z-index: 1
+      &::before,
+      &::after
+        content: ""
+        position: absolute
+        width: 95%
+        height: 95%
+        border-radius: 50%
+        z-index: -2
+      &::before
+        border: 1px solid #e6b668
+      &::after
+        border: 1px solid #125c75

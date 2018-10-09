@@ -1,0 +1,43 @@
+@import "mixin/_mixinFlexWebkit.scss"
+
+footer
+  border-bottom: 1px solid #e6d9ca
+  padding-bottom: 2%
+  .footer_content
+    padding-top: 3%
+    font-family: "OldKingC", sans-serif
+    color: black
+    .footer_link
+      font-size: 13px
+      width: 38%
+      margin-top: 4%
+      .flex__column
+        @include justify-content(flex-start)
+        p
+          margin-bottom: 19px
+    .footer_contacts
+      margin-right: 13%
+      margin-top: 4%
+      .phone_number
+        color: black
+        font-size: 24px
+        span
+          font-size: 13px
+          color: #1b97c3
+      .footer_inst
+        @include flexbox
+        @include align-items(center)
+        color: #1b97c3
+        margin-top: 6%
+        img
+          margin-right: 6%
+
+section.cop
+  margin-top: 3%
+  padding-bottom: 2.3%
+  .copyrights
+    @include flexbox
+    @include justify-content(center)
+    @include flex-direction(column)
+    text-align: center
+    line-height: 1.5rem
