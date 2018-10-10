@@ -1,4 +1,4 @@
-@import "mixin/_mixinFlexWebkit.scss"
+@import "../mixin/_mixinFlexWebkit.scss"
 
 section.gallery
   background-color: #fcf8f0
@@ -48,6 +48,9 @@ section.gallery
       border-radius: 50%
       position: relative
       z-index: 1
+      @media screen and (max-width: 1200px)
+        width: 250px
+        height: 250px
       &::before,
       &::after
         content: ""
@@ -60,3 +63,6 @@ section.gallery
         border: 1px solid #e6b668
       &::after
         border: 1px solid #125c75
+      img
+        width: 100%
+        height: auto

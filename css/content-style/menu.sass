@@ -1,4 +1,4 @@
-@import "mixin/_mixinFlexWebkit.scss"
+@import "../mixin/_mixinFlexWebkit.scss"
 
 .flex__column
   @include flexbox
@@ -11,12 +11,14 @@ header
     text-align: center
     height: 100vh
     position: fixed
-    left: 21.5%
-    min-width: 127px
+    margin-left: 21.5%
+    min-width: 117px
+    padding: 0 5px
+    z-index: 10
     @media screen and (min-height: 624px)
       padding: 0 13px
-    @media screen and (max-width: 1024px)
-      left: 1%
+    @media screen and (max-width: 1440px)
+      margin-left: 1.5%
     a
       color: #e4b05c
       font-size: 13px
