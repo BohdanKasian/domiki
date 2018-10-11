@@ -432,10 +432,11 @@ a:hover {
   flex-direction: column; }
 
 header .menu {
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
   background-color: #4b3939;
   text-align: center;
   height: 100vh;
@@ -452,13 +453,11 @@ header .menu {
     font-size: 13px; }
 header .logo_bg {
   position: relative;
-  width: 21vh;
-  max-height: 130px;
-  max-width: 130px;
-  height: 21vh;
+  height: 130px;
+  width: 130px;
   background-color: white;
   border-radius: 100%;
-  margin: 0 auto;
+  margin: 20px auto 30px auto;
   padding: 10% 0; }
   header .logo_bg .logo_img {
     background: url("../images/logo.svg") no-repeat center top;
@@ -626,4 +625,4 @@ section.contacts .iframe_wrapper {
     section.contacts .iframe_wrapper {
       margin: 40px 13% 0 18%; } }
 
-/*# sourceMappingURL=contacts.css.map */
+/*# sourceMappingURL=contact.css.map */

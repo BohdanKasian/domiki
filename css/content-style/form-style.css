@@ -4,7 +4,8 @@
   color: white;
   padding-bottom: 3%; }
   .form-bg .line {
-    border: none; }
+    border: none;
+    margin: 0; }
     .form-bg .line .icon_img {
       top: -20px;
       background: url("../images/form-clock-bg.png") no-repeat;
@@ -24,15 +25,17 @@
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    font-family: Arial;
+    font-family: "ArialMT";
     font-size: 12px;
     margin-top: 14px; }
     .form-bg form label {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      color: white; }
     .form-bg form input {
-      padding: 5px 0; }
+      padding: 5px 10%;
+      color: black; }
     .form-bg form .form_text {
-      margin-right: 5px;
+      margin-right: 10px;
       padding-top: 26px; }
     .form-bg form .arrival_width {
       width: 13%;
@@ -40,7 +43,19 @@
     .form-bg form .departure_width {
       width: 13%; }
     .form-bg form .quantity_width {
-      width: 12%; }
+      width: 12%;
+      position: relative; }
+      .form-bg form .quantity_width input {
+        text-align: right; }
+      .form-bg form .quantity_width .arrow_quantity {
+        background: url("../images/form-arrows-bottom.jpg") no-repeat;
+        width: 10px;
+        height: 6px;
+        position: absolute;
+        right: 6px;
+        top: 32px;
+        z-index: 1;
+        cursor: pointer; }
     .form-bg form .phone_width {
       width: 15%; }
     .form-bg form > div {
@@ -61,6 +76,7 @@
       align-items: flex-end;
       margin-left: 1%; }
       .form-bg form .button_box .button {
+        color: white;
         background-color: #e4b05c;
         text-transform: uppercase;
         padding: 7px 39px;

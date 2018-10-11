@@ -4,7 +4,7 @@
   background: url("../images/form-bg.jpg") no-repeat center top
   background-size: cover
   color: white
-  padding-bottom: 3%
+  padding-bottom: 69px
   .line
     border: none
     margin: 0
@@ -30,8 +30,9 @@
       margin-bottom: 5px
       color: white
     input
-      padding: 5px 10%
+      padding: 7px 10%
       color: black
+      border: none !important
     .form_text
       margin-right: 10px
       padding-top: 26px
@@ -42,19 +43,7 @@
       width: 13%
     .quantity_width
       width: 12%
-      input
-        text-align: right
-        &::-webkit-calendar-picker-indicator
-          opacity: 1
-          color: rgba(0, 0, 0,0)
-          display: block
-          background: url("../images/form-arrows-bottom.jpg") no-repeat
-          width: 10px
-          height: 6px
-          position: relative
-          right: -9px
-          top: 2px
-          cursor: pointer
+      position: relative
     .phone_width
       width: 15%
     >div
@@ -72,21 +61,21 @@
         text-transform: uppercase
         padding: 7px 39px
         border: none !important
-@-moz-document url-prefix()
-  .form-bg
-    form
-      .quantity_width
-        position: relative
-        &::after
-          content: ""
-          display: block
-          background: url("../images/form-arrows-bottom.jpg") no-repeat
-          width: 10px
-          height: 6px
-          position: absolute
-          right: 6px
-          top: 32px
-          pointer-events: none
-          cursor: pointer
-        input
-          padding-right: 18%
+
+.styled_select
+  overflow: hidden
+  background: url("../images/form-arrows-bottom.png") no-repeat right
+  background-color: white
+  select
+    border: none !important
+    background: transparent
+    padding: 7px 0 7px 67%
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 100%
+    color: rgba(0,0,0,0.5)
+  [data-selected]
+    color: black
+  option
+    color: black

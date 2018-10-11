@@ -432,10 +432,11 @@ a:hover {
   flex-direction: column; }
 
 header .menu {
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
   background-color: #4b3939;
   text-align: center;
   height: 100vh;
@@ -452,13 +453,11 @@ header .menu {
     font-size: 13px; }
 header .logo_bg {
   position: relative;
-  width: 21vh;
-  max-height: 130px;
-  max-width: 130px;
-  height: 21vh;
+  height: 130px;
+  width: 130px;
   background-color: white;
   border-radius: 100%;
-  margin: 0 auto;
+  margin: 20px auto 30px auto;
   padding: 10% 0; }
   header .logo_bg .logo_img {
     background: url("../images/logo.svg") no-repeat center top;
@@ -505,7 +504,7 @@ header .call {
   background: url("../images/form-bg.jpg") no-repeat center top;
   background-size: cover;
   color: white;
-  padding-bottom: 3%; }
+  padding-bottom: 69px; }
   .form-bg .line {
     border: none;
     margin: 0; }
@@ -535,8 +534,9 @@ header .call {
       margin-bottom: 5px;
       color: white; }
     .form-bg form input {
-      padding: 5px 10%;
-      color: black; }
+      padding: 7px 10%;
+      color: black;
+      border: none !important; }
     .form-bg form .form_text {
       margin-right: 10px;
       padding-top: 26px; }
@@ -546,20 +546,8 @@ header .call {
     .form-bg form .departure_width {
       width: 13%; }
     .form-bg form .quantity_width {
-      width: 12%; }
-      .form-bg form .quantity_width input {
-        text-align: right; }
-        .form-bg form .quantity_width input::-webkit-calendar-picker-indicator {
-          opacity: 1;
-          color: rgba(0, 0, 0, 0);
-          display: block;
-          background: url("../images/form-arrows-bottom.jpg") no-repeat;
-          width: 10px;
-          height: 6px;
-          position: relative;
-          right: -9px;
-          top: 2px;
-          cursor: pointer; }
+      width: 12%;
+      position: relative; }
     .form-bg form .phone_width {
       width: 15%; }
     .form-bg form > div {
@@ -586,22 +574,24 @@ header .call {
         padding: 7px 39px;
         border: none !important; }
 
-@-moz-document url-prefix() {
-  .form-bg form .quantity_width {
-    position: relative; }
-    .form-bg form .quantity_width::after {
-      content: "";
-      display: block;
-      background: url("../images/form-arrows-bottom.jpg") no-repeat;
-      width: 10px;
-      height: 6px;
-      position: absolute;
-      right: 6px;
-      top: 32px;
-      pointer-events: none;
-      cursor: pointer; }
-    .form-bg form .quantity_width input {
-      padding-right: 18%; } }
+.styled_select {
+  overflow: hidden;
+  background: url("../images/form-arrows-bottom.png") no-repeat right;
+  background-color: white; }
+  .styled_select select {
+    border: none !important;
+    background: transparent;
+    padding: 7px 0 7px 67%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5); }
+  .styled_select [data-selected] {
+    color: black; }
+  .styled_select option {
+    color: black; }
+
 footer {
   border-bottom: 1px solid #e6d9ca;
   padding-bottom: 2%; }
