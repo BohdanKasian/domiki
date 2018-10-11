@@ -830,6 +830,9 @@ section.reviews .all_reviews {
   top: -65px; }
   section.reviews .all_reviews .all_reviews__link {
     margin-left: 1%; }
+    section.reviews .all_reviews .all_reviews__link:hover {
+      opacity: 0.9;
+      cursor: pointer; }
     section.reviews .all_reviews .all_reviews__link .orange_circle {
       left: 46%; }
 
