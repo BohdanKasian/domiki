@@ -1,0 +1,70 @@
+@import "normalize"
+@import "reset"
+@import "content-style/all-pages"
+@import "content-style/menu"
+@import "content-style/form-style"
+@import "content-style/footer-style"
+@import "mixin/_mixinFlexWebkit.scss"
+
+
+section.services
+  text-align: center
+  .title
+    padding-top: 1%
+    position: relative
+    left: -6%
+  .services_line
+    width: 27%
+    margin: 0 auto 4% auto
+    border: 1px solid #d9d5d5
+    position: relative
+    left: -6%
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      border-radius: 50%
+      width: 10px
+      height: 10px
+      background-color: #d9d5d5
+      top: -5px
+    &::before
+      left: -5px
+    &::after
+      right: -5px
+  .flex__wrap
+    @include justify-content(flex-start)
+    >div
+      width: 22%
+      min-width: 210px
+      margin: 0 11% 4% 0
+      >a
+        color: #4a3838
+      .img-wrap
+        width: 210px
+        height: 210px
+        overflow: hidden
+        border-radius: 50%
+        img
+          width: 155%
+          transition: all 1s linear
+          &:hover
+            transform: scale(1.2)
+      h3
+        margin-top: 9%
+        font-size: 18px
+      .line
+        margin: 5% auto 1%
+        width: 77%
+      p
+        white-space: nowrap
+        color: #4a3838
+        font-size: 14px
+        a
+          font-family: "Arial-I"
+          font-weight: bold
+          color: #1b97c3
+    @media screen and (max-width: 1178px)
+      @include justify-content(center)
+      >div
+        margin: 0 auto 4%

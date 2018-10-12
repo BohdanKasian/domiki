@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAQ;EACN,gBAAgB,EAAE,KAAK",
-"sources": ["form.sass"],
-"names": [],
-"file": "form.css"
-}

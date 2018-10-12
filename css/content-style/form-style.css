@@ -1,0 +1,69 @@
+.form-bg {
+  background: url("../images/form-bg.jpg") no-repeat center top;
+  background-size: cover;
+  color: white;
+  padding-bottom: 3%; }
+  .form-bg .line {
+    border: none; }
+    .form-bg .line .icon_img {
+      top: -20px;
+      background: url("../images/form-clock-bg.png") no-repeat;
+      left: 43%; }
+      .form-bg .line .icon_img::before {
+        left: 3%;
+        background: url("../images/form-clock.png") no-repeat center; }
+  .form-bg h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8.4%;
+    letter-spacing: 0.04rem; }
+  .form-bg form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Arial;
+    font-size: 12px;
+    margin-top: 14px; }
+    .form-bg form label {
+      margin-bottom: 5px; }
+    .form-bg form input {
+      padding: 5px 0; }
+    .form-bg form .form_text {
+      margin-right: 5px;
+      padding-top: 26px; }
+    .form-bg form .arrival_width {
+      width: 13%;
+      margin-right: 4%; }
+    .form-bg form .departure_width {
+      width: 13%; }
+    .form-bg form .quantity_width {
+      width: 12%; }
+    .form-bg form .phone_width {
+      width: 15%; }
+    .form-bg form > div {
+      margin-right: 1.2%; }
+    .form-bg form .live_margin {
+      margin-right: 2%;
+      width: 16%; }
+    .form-bg form .button_box {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end;
+      align-items: flex-end;
+      margin-left: 1%; }
+      .form-bg form .button_box .button {
+        background-color: #e4b05c;
+        text-transform: uppercase;
+        padding: 7px 39px;
+        border: none !important; }
+
+/*# sourceMappingURL=form-style.css.map */

@@ -1,0 +1,57 @@
+@import "normalize"
+@import "reset"
+@import "content-style/all-pages"
+@import "content-style/menu"
+@import "content-style/houses-style"
+@import "content-style/form-style"
+@import "content-style/footer-style"
+@import "mixin/_mixinFlexWebkit.scss"
+
+.slider
+  height: 100vh
+  width: 100%
+  .item
+    height: 100vh
+    width: 70vw
+    img
+      width: 100%
+      height: 100%
+      @media screen and (min-width: 300px)
+        width: 100vw 
+.slick-initialized .slick-slide
+  outline: none
+.slick-list
+  height: 100vh
+.slick-dotted.slick-slider
+  margin: 0
+.slick-dots
+  bottom: 1%
+  right: 17%
+  text-align: right
+.slick-dots li.slick-active button:before
+  opacity: 1
+  color: orange
+.slick-dots li button:before
+  opacity: 1
+  color: slategrey
+
+section.houses
+  .houses_line
+    width: 20%
+    margin: 3% auto
+    border: 1px solid #4b3939
+    position: relative
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      border-radius: 50%
+      width: 10px
+      height: 10px
+      background-color: #4b3939
+      top: -5px
+    &::before
+      left: -5px
+    &::after
+      right: -5px
+      

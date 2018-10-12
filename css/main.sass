@@ -1,26 +1,13 @@
 @import "normalize"
 @import "reset"
+@import "content-style/all-pages"
 @import "content-style/menu"
-@import "content-style/form"
-@import "content-style/reviews"
+@import "content-style/houses-style"
+@import "content-style/form-style"
+@import "content-style/reviews-style"
 @import "content-style/galleryMain"
-@import "content-style/footer"
+@import "content-style/footer-style"
 @import "mixin/_mixinFlexWebkit.scss"
-
-body
-  font-family: "OldKingC", sans-serif
-
-a
-  &:hover
-    opacity: 0.9
-
-.wrapper
-  width: 60%
-  max-width: 956px
-  margin: 0 auto 0 36%
-  @media screen and (max-width: 1440px)
-    margin: 0 auto 0 20%
-    width: 80%
 
 header
   background: url("../images/main/bg-header.jpg") no-repeat center top
@@ -29,30 +16,6 @@ header
   -moz-background-size: cover
   background-size: cover
 
-.flex__wrap
-  @include flexbox
-  @include flex-wrap(wrap)
-  @include justify-content(space-around)
-
-.line
-  position: relative
-  border: 1px solid #e8ddd3
-  width: 100%
-  margin-top: 1%
-  .icon_img
-    border-radius: 50%
-    position: absolute
-    left: 43.5%
-    top: -46px
-    width: 105px
-    height: 105px
-    background-color: white
-    &::before
-      content: ""
-      width: 90%
-      height: 90%
-      position: absolute
-      background-size: contain
 .offer
   color: #352b2b
   .line
@@ -136,75 +99,5 @@ header
         width: 50%
         margin: 0 auto
 
-.flex__around
-  @include flexbox
-  @include justify-content(space-around)
-.title
-  text-transform: uppercase
-  font-size: 30px
-  line-height: 6rem
-  text-align: center
-  color: #4a3838
-
 section.houses
   margin-top: 4%
-  background-color: #fcf8f0
-  text-align: center
-  padding-bottom: 3.3%
-  .line
-    .icon_img
-      background-color: #fcf8f0
-      &::before
-        left: 7%
-        background: url("../images/main/sectionHouses-icon.png") no-repeat center
-  .title
-    margin-top: 2.5%
-  a
-    margin-right: 3%
-  .border_inside
-    background-color: #efeae3
-    overflow: hidden
-    position: relative
-    padding: 40px
-    margin-bottom: 10%
-    &::before,
-    &::after,
-    .border_inside_bottom::before,
-    .border_inside_bottom::after
-      position: absolute
-      background-color: #fcf8f0
-      border-radius: 50%
-      content: ""
-      width: 80px
-      height: 80px
-    .border_inside_bottom
-      content: ""
-      width: 100%
-      height: 100%
-      &::before,
-      &::after
-        bottom: -40px
-      &::before
-        left: -40px
-      &::after
-        right: -40px
-    &::before,
-    &::after
-      top: -40px
-    &::before
-      left: -40px
-    &::after
-      right: -40px
-  p
-    font-family: "Arial-I"
-    color: #1b97c3
-    width: 50%
-    margin: 0 auto
-
-.flex_items__start
-  @include flexbox
-  @include align-items(flex-start)
-
-.flex__between
-  @include flexbox
-  @include justify-content(space-between)

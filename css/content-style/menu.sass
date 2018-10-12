@@ -13,10 +13,8 @@ header
     position: fixed
     margin-left: 21.5%
     min-width: 117px
-    padding: 0 5px
+    padding: 0 13px
     z-index: 10
-    @media screen and (min-height: 624px)
-      padding: 0 13px
     @media screen and (max-width: 1440px)
       margin-left: 1.5%
     a
@@ -49,6 +47,10 @@ header
       padding-top: 1.5vh
       &:last-child
         border-bottom: none
+      &:hover,
+      &:active
+        color: white
+        transition: all 0.3s linear
   .call
     margin-bottom: 4vh
     p

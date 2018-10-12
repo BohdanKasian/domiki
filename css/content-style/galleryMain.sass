@@ -5,9 +5,12 @@ section.gallery
   text-align: center
   padding-bottom: 2%
   .line
-    margin-top: 3%
+    padding-top: 2%
+    border: none
+    border-bottom: 2px solid #e8ddd3
     .icon_img
       background-color: #fcf8f0
+      top: -24px
       &::before
         background: url("../images/gallery/gallery-icon.png") no-repeat
         left: 19%
@@ -23,24 +26,25 @@ section.gallery
         margin-top: 6%
     .bg-img.nature
       &::before
-        left: -4px
+        left: -16px
+        top: -5px
       &::after
-        left: 7px
-        bottom: -1px
+        left: -3px
+        bottom: -13px
     .bg-img.sights
       &::before
-        top: -12px
-        left: 0
+        top: -13px
+        left: -4px
       &::after
-        left: 15px
-        top: 3px
+        left: 9px
+        top: 0px
     .bg-img.waterfalls
       &::before
-        top: 28px
-        left: 27px
+        top: 8px
+        left: 7px
       &::after
-        left: 12px
-        top: 10px
+        left: 17px
+        top: 18px
     .bg-img
       display: block
       width: 300px
@@ -55,8 +59,8 @@ section.gallery
       &::after
         content: ""
         position: absolute
-        width: 95%
-        height: 95%
+        width: 100%
+        height: 100%
         border-radius: 50%
         z-index: -2
       &::before

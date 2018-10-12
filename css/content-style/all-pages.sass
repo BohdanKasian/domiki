@@ -1,0 +1,79 @@
+@import "../mixin/_mixinFlexWebkit.scss"
+
+body
+  font-family: "OldKingC", sans-serif
+a
+  &:hover
+    opacity: 0.9
+
+.wrapper
+  width: 65%
+  max-width: 956px
+  margin: 0 auto 0 34%
+  @media screen and (max-width: 1440px)
+    margin: 0 auto 0 20%
+    width: 80%
+
+.pink_line
+  position: relative
+  width: 100%
+  height: 10px
+  background-color: #fcf8f0
+  .semicircle
+    position: absolute
+    border-radius: 50%
+    left: 39%
+    top: -78px
+    width: 105px
+    height: 105px
+    background-color: inherit
+
+.line
+  position: relative
+  border: 1px solid #e8ddd3
+  width: 100%
+  margin-top: 1%
+  .icon_img
+    border-radius: 50%
+    position: absolute
+    left: 43.5%
+    top: -46px
+    width: 105px
+    height: 105px
+    background-color: white
+    &::before
+      content: ""
+      width: 90%
+      height: 90%
+      position: absolute
+      background-size: contain
+
+.title
+  text-transform: uppercase
+  font-size: 30px
+  line-height: 6rem
+  text-align: center
+  color: #4a3838
+
+.font_ArialB
+  font-family: "Arial"
+  font-weight: bold
+.font_ArialR
+  font-family: "Arial"
+
+.flex__wrap
+  @include flexbox
+  @include flex-wrap(wrap)
+  @include justify-content(space-around)
+
+.flex__around
+  @include flexbox
+  @include justify-content(space-around)
+
+.flex_items__start
+  @include flexbox
+  @include align-items(flex-start)
+
+.flex__between
+  @include flexbox
+  @include justify-content(space-between)

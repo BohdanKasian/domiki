@@ -1,0 +1,40 @@
+@import "normalize"
+@import "reset"
+@import "content-style/all-pages"
+@import "content-style/menu"
+@import "content-style/reviews-style"
+@import "content-style/form-style"
+@import "content-style/footer-style"
+@import "mixin/_mixinFlexWebkit.scss"
+
+.pink_line
+  .semicircle
+    left: 44%
+
+section.reviews
+  .title
+    margin-top: 0
+  .services_line
+    margin: 0 auto 8% auto
+  .services_line
+    width: 27%
+    margin: 0 auto 4% auto
+    border: 1px solid #d9d5d5
+    position: relative
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      border-radius: 50%
+      width: 10px
+      height: 10px
+      background-color: #d9d5d5
+      top: -5px
+    &::before
+      left: -5px
+    &::after
+      right: -5px
+  .review_relative
+    margin-bottom: 4%
+  .all_reviews
+    left: -9px

@@ -1,0 +1,54 @@
+@import "normalize"
+@import "reset"
+@import "content-style/all-pages"
+@import "content-style/menu"
+@import "content-style/footer-style"
+@import "mixin/_mixinFlexWebkit.scss"
+
+.pink_line
+  .semicircle
+    left: 45%
+
+section.contacts
+  .services_line
+    width: 27%
+    margin: 0 auto 4% auto
+    border: 1px solid #d9d5d5
+    position: relative
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      border-radius: 50%
+      width: 10px
+      height: 10px
+      background-color: #d9d5d5
+      top: -5px
+    &::before
+      left: -5px
+    &::after
+      right: -5px
+  .flex__start
+    @include flexbox
+    @include align-items(flex-start)
+    .inform
+      margin-bottom: 4%
+      .icon-bg.marker
+        background: url("../images/contacts/marker.png") no-repeat center
+        width: 11px
+        height: 16px
+        margin-right: 12px
+      .icon-bg.phone
+        background: url("../images/contacts/phone.png") no-repeat center
+        width: 13px
+        height: 19px
+        margin-right: 8px
+      p,
+      a
+        color: #4a3838
+      .font_ArialB
+        margin-right: 8px
+  .iframe_wrapper
+    margin: 0 13% 0 33%
+    @media screen and (max-width: 1440px)
+      margin: 0 13% 0 18%

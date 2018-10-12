@@ -1,0 +1,57 @@
+@import "../mixin/_mixinFlexWebkit.scss"
+
+.form-bg
+  background: url("../images/form-bg.jpg") no-repeat center top
+  background-size: cover
+  color: white
+  padding-bottom: 3%
+  .line
+    border: none
+    .icon_img
+      top: -20px
+      background: url("../images/form-clock-bg.png") no-repeat
+      left: 43%
+      &::before
+        left: 3%
+        background: url("../images/form-clock.png") no-repeat center
+  h2
+    text-transform: uppercase
+    font-size: 30px
+    text-align: center
+    padding-top: 8.4%
+    letter-spacing: 0.04rem
+  form
+    @include flexbox
+    font-family: Arial
+    font-size: 12px
+    margin-top: 14px
+    label
+      margin-bottom: 5px
+    input
+      padding: 5px 0
+    .form_text
+      margin-right: 5px
+      padding-top: 26px
+    .arrival_width
+      width: 13%
+      margin-right: 4%
+    .departure_width
+      width: 13%
+    .quantity_width
+      width: 12%
+    .phone_width
+      width: 15%
+    >div
+      margin-right: 1.2%
+    .live_margin
+      margin-right: 2%
+      width: 16%
+    .button_box
+      @include flexbox
+      @include align-items(flex-end)
+      margin-left: 1%
+      .button
+        background-color: #e4b05c
+        text-transform: uppercase
+        padding: 7px 39px
+        border: none !important

@@ -1,0 +1,55 @@
+section.houses {
+  margin-top: 4%;
+  background-color: #fcf8f0;
+  text-align: center;
+  padding-bottom: 3.3%; }
+  section.houses .line {
+    padding-top: 1%;
+    margin-top: 0;
+    border: none;
+    border-bottom: 1px solid #e8ddd3; }
+    section.houses .line .icon_img {
+      background-color: #fcf8f0; }
+      section.houses .line .icon_img::before {
+        left: 7%;
+        background: url("../images/main/sectionHouses-icon.png") no-repeat center; }
+  section.houses .title {
+    margin-top: 2.5%; }
+  section.houses .border_inside {
+    background-color: #efeae3;
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+    margin-bottom: 10%; }
+    section.houses .border_inside::before, section.houses .border_inside::after,
+    section.houses .border_inside .border_inside_bottom::before,
+    section.houses .border_inside .border_inside_bottom::after {
+      position: absolute;
+      background-color: #fcf8f0;
+      border-radius: 50%;
+      content: "";
+      width: 80px;
+      height: 80px; }
+    section.houses .border_inside .border_inside_bottom {
+      content: "";
+      width: 100%;
+      height: 100%; }
+      section.houses .border_inside .border_inside_bottom::before, section.houses .border_inside .border_inside_bottom::after {
+        bottom: -40px; }
+      section.houses .border_inside .border_inside_bottom::before {
+        left: -40px; }
+      section.houses .border_inside .border_inside_bottom::after {
+        right: -40px; }
+    section.houses .border_inside::before, section.houses .border_inside::after {
+      top: -40px; }
+    section.houses .border_inside::before {
+      left: -40px; }
+    section.houses .border_inside::after {
+      right: -40px; }
+  section.houses p {
+    font-family: "Arial-I";
+    color: #1b97c3;
+    width: 50%;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=houses-style.css.mapss.map */
