@@ -734,7 +734,7 @@ section.reviews {
         border-left: 1px solid #e6d9ca; }
       section.reviews .reviews-box .border_inside .text_box {
         line-height: 1.49rem;
-        padding: 23% 14% 20% 25%; }
+        padding: 100px 64px 100px 75px; }
         section.reviews .reviews-box .border_inside .text_box .line {
           height: 7px;
           border: none;

@@ -620,9 +620,9 @@ section.contacts .flex__start {
     section.contacts .flex__start .inform .font_ArialB {
       margin-right: 8px; }
 section.contacts .iframe_wrapper {
-  margin: 2% 13% 0 34%; }
+  margin: 40px 13% 0 34%; }
   @media screen and (max-width: 1440px) {
     section.contacts .iframe_wrapper {
-      margin: 0 13% 0 18%; } }
+      margin: 40px 13% 0 18%; } }
 
 /*# sourceMappingURL=contacts.css.map */

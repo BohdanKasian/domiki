@@ -463,7 +463,7 @@ header .logo_bg {
     position: absolute;
     background: url("../images/logo.svg") no-repeat center top;
     width: 130px;
-    height: 80%;
+    height: 130px;
     left: 11%;
     background-size: contain;
     top: 15%; }
@@ -572,7 +572,7 @@ section.reviews {
         border-left: 1px solid #e6d9ca; }
       section.reviews .reviews-box .border_inside .text_box {
         line-height: 1.49rem;
-        padding: 23% 14% 20% 25%; }
+        padding: 100px 64px 100px 75px; }
         section.reviews .reviews-box .border_inside .text_box .line {
           height: 7px;
           border: none;
@@ -834,13 +834,16 @@ section.reviews .services_line {
   section.reviews .services_line::after {
     right: -5px; }
 section.reviews .review_relative {
-  margin-bottom: 4%; }
+  margin-bottom: 25px; }
 section.reviews .all_reviews {
   left: -9px;
-  top: -80px; }
+  top: -65px; }
   section.reviews .all_reviews .all_reviews__link {
     margin-left: 1%; }
     section.reviews .all_reviews .all_reviews__link .orange_circle {
       left: 46%; }
+
+.dd__none {
+  display: none; }
 
 /*# sourceMappingURL=reviews.css.map */
