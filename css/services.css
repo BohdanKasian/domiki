@@ -558,7 +558,7 @@ header .call {
           height: 6px;
           position: relative;
           right: -9px;
-          top: 3px;
+          top: 2px;
           cursor: pointer; }
     .form-bg form .phone_width {
       width: 15%; }
@@ -586,6 +586,22 @@ header .call {
         padding: 7px 39px;
         border: none !important; }
 
+@-moz-document url-prefix() {
+  .form-bg form .quantity_width {
+    position: relative; }
+    .form-bg form .quantity_width::after {
+      content: "";
+      display: block;
+      background: url("../images/form-arrows-bottom.jpg") no-repeat;
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      right: 6px;
+      top: 32px;
+      pointer-events: none;
+      cursor: pointer; }
+    .form-bg form .quantity_width input {
+      padding-right: 18%; } }
 footer {
   border-bottom: 1px solid #e6d9ca;
   padding-bottom: 2%; }

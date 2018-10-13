@@ -32,3 +32,21 @@ section.price
         font-family: "Arial"
         font-size: 14px
         color: #4a3838
+  .services_line
+    width: 27%
+    margin: 0 auto 5% auto
+    border: 1px solid #d9d5d5
+    position: relative
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      border-radius: 50%
+      width: 10px
+      height: 10px
+      background-color: #d9d5d5
+      top: -5px
+    &::before
+      left: -5px
+    &::after
+      right: -5px

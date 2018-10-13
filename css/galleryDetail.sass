@@ -86,12 +86,15 @@ section.fishing
     @include justify-content(center)
     a
       color: #cfcfcf
-      text-decoration: underline
+      border-bottom: 1px solid #cfcfcf
       position: relative
       margin-right: 20px
       &:active,
       &:last-child
-        text-decoration: none
+        cursor: auto
+        border: none
+        &:hover
+          opacity: 1
       &::after
         position: absolute
         border-radius: 50%

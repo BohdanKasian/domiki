@@ -586,6 +586,22 @@ header .call {
         padding: 7px 39px;
         border: none !important; }
 
+@-moz-document url-prefix() {
+  .form-bg form .quantity_width {
+    position: relative; }
+    .form-bg form .quantity_width::after {
+      content: "";
+      display: block;
+      background: url("../images/form-arrows-bottom.jpg") no-repeat;
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      right: 6px;
+      top: 32px;
+      pointer-events: none;
+      cursor: pointer; }
+    .form-bg form .quantity_width input {
+      padding-right: 18%; } }
 footer {
   border-bottom: 1px solid #e6d9ca;
   padding-bottom: 2%; }
@@ -694,14 +710,17 @@ section.houses_detail .list {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  font-size: 12px; }
+  font-size: 13px; }
   section.houses_detail .list a {
     color: #cfcfcf;
-    text-decoration: underline;
     position: relative;
-    margin-right: 20px; }
+    margin-right: 20px;
+    border-bottom: 1px solid #cfcfcf; }
     section.houses_detail .list a:active, section.houses_detail .list a:last-child {
-      text-decoration: none; }
+      cursor: auto;
+      border: none; }
+      section.houses_detail .list a:active:hover, section.houses_detail .list a:last-child:hover {
+        opacity: 1; }
     section.houses_detail .list a::after {
       position: absolute;
       border-radius: 50%;
@@ -713,6 +732,8 @@ section.houses_detail .list {
       right: -14px; }
     section.houses_detail .list a:last-child::after {
       display: none; }
+section.houses_detail .content {
+  margin: 2% 0 5% 0; }
 section.houses_detail .detail {
   display: inline-block;
   vertical-align: top;
@@ -770,7 +791,7 @@ section.houses_detail .slider {
       border-radius: 20px;
       margin: 0 9px; }
       section.houses_detail .slider .slider-nav .slick-slide .image {
-        border-radius: 20px;
+        border-radius: 10px;
         width: 100%;
         height: 90px; }
   section.houses_detail .slider .border_inside {

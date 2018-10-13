@@ -586,6 +586,22 @@ header .call {
         padding: 7px 39px;
         border: none !important; }
 
+@-moz-document url-prefix() {
+  .form-bg form .quantity_width {
+    position: relative; }
+    .form-bg form .quantity_width::after {
+      content: "";
+      display: block;
+      background: url("../images/form-arrows-bottom.jpg") no-repeat;
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      right: 6px;
+      top: 32px;
+      pointer-events: none;
+      cursor: pointer; }
+    .form-bg form .quantity_width input {
+      padding-right: 18%; } }
 footer {
   border-bottom: 1px solid #e6d9ca;
   padding-bottom: 2%; }
@@ -739,11 +755,14 @@ section.fishing .list {
   justify-content: center; }
   section.fishing .list a {
     color: #cfcfcf;
-    text-decoration: underline;
+    border-bottom: 1px solid #cfcfcf;
     position: relative;
     margin-right: 20px; }
     section.fishing .list a:active, section.fishing .list a:last-child {
-      text-decoration: none; }
+      cursor: auto;
+      border: none; }
+      section.fishing .list a:active:hover, section.fishing .list a:last-child:hover {
+        opacity: 1; }
     section.fishing .list a::after {
       position: absolute;
       border-radius: 50%;

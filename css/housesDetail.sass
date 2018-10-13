@@ -39,15 +39,18 @@ section.houses_detail
   .list
     @include flexbox
     @include justify-content(center)
-    font-size: 12px
+    font-size: 13px
     a
       color: #cfcfcf
-      text-decoration: underline
       position: relative
       margin-right: 20px
+      border-bottom: 1px solid #cfcfcf
       &:active,
       &:last-child
-        text-decoration: none
+        cursor: auto
+        border: none
+        &:hover
+          opacity: 1
       &::after
         position: absolute
         border-radius: 50%
@@ -60,6 +63,8 @@ section.houses_detail
       &:last-child
         &::after
           display: none
+  .content
+    margin: 2% 0 5% 0
   .detail
     display: inline-block
     vertical-align: top
@@ -119,7 +124,7 @@ section.houses_detail
         border-radius: 20px
         margin: 0 9px
         .image
-          border-radius: 20px
+          border-radius: 10px
           width: 100%
           height: 90px
     .border_inside

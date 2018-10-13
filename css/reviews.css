@@ -722,6 +722,22 @@ section.reviews {
         padding: 7px 39px;
         border: none !important; }
 
+@-moz-document url-prefix() {
+  .form-bg form .quantity_width {
+    position: relative; }
+    .form-bg form .quantity_width::after {
+      content: "";
+      display: block;
+      background: url("../images/form-arrows-bottom.jpg") no-repeat;
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      right: 6px;
+      top: 32px;
+      pointer-events: none;
+      cursor: pointer; }
+    .form-bg form .quantity_width input {
+      padding-right: 18%; } }
 footer {
   border-bottom: 1px solid #e6d9ca;
   padding-bottom: 2%; }
@@ -819,6 +835,11 @@ section.reviews .services_line {
 section.reviews .review_relative {
   margin-bottom: 4%; }
 section.reviews .all_reviews {
-  left: -9px; }
+  left: -9px;
+  top: -80px; }
+  section.reviews .all_reviews .all_reviews__link {
+    margin-left: 1%; }
+    section.reviews .all_reviews .all_reviews__link .orange_circle {
+      left: 46%; }
 
 /*# sourceMappingURL=reviews.css.map */
