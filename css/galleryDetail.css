@@ -639,49 +639,50 @@ section.cop {
       color: #5db5d4; }
 
 .pink_line {
-  height: 90px;
-  overflow: hidden;
-  position: relative;
-  background-color: white; }
+  height: 90px; }
   .pink_line .semicircle {
     top: 6px;
     left: 43%;
     z-index: -1; }
   .pink_line .flex__around {
     padding: 23px 0 23px 76px; }
-  .pink_line::before, .pink_line::after,
-  .pink_line .border_inside_bottom::before,
-  .pink_line .border_inside_bottom::after {
-    position: absolute;
-    background-color: #fcf8f0;
-    border-radius: 50%;
-    content: "";
-    width: 10px;
-    height: 10px; }
-  .pink_line .border_inside_bottom {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border: 1px solid #e6d9ca;
-    padding: 10px 20px; }
-    .pink_line .border_inside_bottom::before, .pink_line .border_inside_bottom::after {
-      bottom: -5px;
-      border-top: 1px solid #e6d9ca; }
-    .pink_line .border_inside_bottom::before {
+  .pink_line .border_inside {
+    overflow: hidden;
+    position: relative;
+    background-color: white; }
+    .pink_line .border_inside::before, .pink_line .border_inside::after,
+    .pink_line .border_inside .border_inside_bottom::before,
+    .pink_line .border_inside .border_inside_bottom::after {
+      position: absolute;
+      background-color: #fcf8f0;
+      border-radius: 50%;
+      content: "";
+      width: 10px;
+      height: 10px; }
+    .pink_line .border_inside .border_inside_bottom {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border: 1px solid #e6d9ca;
+      padding: 10px 20px; }
+      .pink_line .border_inside .border_inside_bottom::before, .pink_line .border_inside .border_inside_bottom::after {
+        bottom: -5px;
+        border-top: 1px solid #e6d9ca; }
+      .pink_line .border_inside .border_inside_bottom::before {
+        left: -5px;
+        border-right: 1px solid #e6d9ca; }
+      .pink_line .border_inside .border_inside_bottom::after {
+        right: -5px;
+        border-left: 1px solid #e6d9ca; }
+    .pink_line .border_inside::before, .pink_line .border_inside::after {
+      top: -5px;
+      border-bottom: 1px solid #e6d9ca; }
+    .pink_line .border_inside::before {
       left: -5px;
       border-right: 1px solid #e6d9ca; }
-    .pink_line .border_inside_bottom::after {
+    .pink_line .border_inside::after {
       right: -5px;
       border-left: 1px solid #e6d9ca; }
-  .pink_line::before, .pink_line::after {
-    top: -5px;
-    border-bottom: 1px solid #e6d9ca; }
-  .pink_line::before {
-    left: -5px;
-    border-right: 1px solid #e6d9ca; }
-  .pink_line::after {
-    right: -5px;
-    border-left: 1px solid #e6d9ca; }
   .pink_line a {
     color: #5db5d4;
     font-size: 18px;
@@ -745,7 +746,7 @@ section.fishing .slider-for .slick-slide img {
 section.fishing .slider-nav {
   max-height: 140px; }
   section.fishing .slider-nav .slick-slide {
-    margin-right: 15px;
+    margin: 0 7px;
     border-radius: 20px;
     box-shadow: inset 0 0 0 140px rgba(0, 0, 0, 0.34); }
     section.fishing .slider-nav .slick-slide img {
@@ -800,4 +801,4 @@ section.fishing .border_inside {
   section.fishing .border_inside::after {
     right: -40px; }
 
-/*# sourceMappingURL=fishing.css.map */
+/*# sourceMappingURL=galleryDetail.css.map */

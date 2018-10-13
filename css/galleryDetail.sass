@@ -15,45 +15,45 @@
   .flex__around
     padding: 23px 0 23px 76px
   .border_inside
-  overflow: hidden
-  position: relative
-  background-color: white
-  &::before,
-  &::after,
-  .border_inside_bottom::before,
-  .border_inside_bottom::after
-    position: absolute
-    background-color: #fcf8f0
-    border-radius: 50%
-    content: ""
-    width: 10px
-    height: 10px
-  .border_inside_bottom
-    content: ""
-    width: 100%
-    height: 100%
-    border: 1px solid #e6d9ca
-    padding: 10px 20px
+    overflow: hidden
+    position: relative
+    background-color: white
+    &::before,
+    &::after,
+    .border_inside_bottom::before,
+    .border_inside_bottom::after
+      position: absolute
+      background-color: #fcf8f0
+      border-radius: 50%
+      content: ""
+      width: 10px
+      height: 10px
+    .border_inside_bottom
+      content: ""
+      width: 100%
+      height: 100%
+      border: 1px solid #e6d9ca
+      padding: 10px 20px
+      &::before,
+      &::after
+        bottom: -5px
+        border-top: 1px solid #e6d9ca
+      &::before
+        left: -5px
+        border-right: 1px solid #e6d9ca
+      &::after
+        right: -5px
+        border-left: 1px solid #e6d9ca
     &::before,
     &::after
-      bottom: -5px
-      border-top: 1px solid #e6d9ca
+      top: -5px
+      border-bottom: 1px solid #e6d9ca
     &::before
       left: -5px
       border-right: 1px solid #e6d9ca
     &::after
       right: -5px
       border-left: 1px solid #e6d9ca
-  &::before,
-  &::after
-    top: -5px
-    border-bottom: 1px solid #e6d9ca
-  &::before
-    left: -5px
-    border-right: 1px solid #e6d9ca
-  &::after
-    right: -5px
-    border-left: 1px solid #e6d9ca
   a
     color: #5db5d4
     font-size: 18px
@@ -115,7 +115,7 @@ section.fishing
   .slider-nav
     max-height: 140px
     .slick-slide
-      margin-right: 15px
+      margin: 0 7px
       border-radius: 20px
       box-shadow: inset 0 0 0 140px rgba(0,0,0,0.34)
       img
