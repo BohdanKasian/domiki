@@ -462,8 +462,8 @@ header .logo_bg {
     content: "";
     position: absolute;
     background: url("../images/logo.svg") no-repeat center top;
-    width: 80%;
-    height: 80%;
+    width: 130px;
+    height: 130px;
     left: 11%;
     background-size: contain;
     top: 15%; }
@@ -620,7 +620,7 @@ section.contacts .flex__start {
     section.contacts .flex__start .inform .font_ArialB {
       margin-right: 8px; }
 section.contacts .iframe_wrapper {
-  margin: 0 13% 0 33%; }
+  margin: 2% 13% 0 34%; }
   @media screen and (max-width: 1440px) {
     section.contacts .iframe_wrapper {
       margin: 0 13% 0 18%; } }

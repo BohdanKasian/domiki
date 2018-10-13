@@ -462,7 +462,7 @@ header .logo_bg {
     content: "";
     position: absolute;
     background: url("../images/logo.svg") no-repeat center top;
-    width: 80%;
+    width: 130px;
     height: 80%;
     left: 11%;
     background-size: contain;
