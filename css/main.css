@@ -362,11 +362,10 @@ a:hover {
   color: #4a3838; }
 
 .font_ArialB {
-  font-family: "Arial";
-  font-weight: bold; }
+  font-family: "Arial-BoldMT"; }
 
 .font_ArialR {
-  font-family: "Arial"; }
+  font-family: "ArialMT"; }
 
 .flex__wrap {
   display: -webkit-box;
@@ -453,8 +452,8 @@ header .menu {
 header .logo_bg {
   position: relative;
   width: 21vh;
-  max-height: 220px;
-  max-width: 220px;
+  max-height: 166px;
+  max-width: 166px;
   height: 21vh;
   background-color: white;
   border-radius: 100%;
@@ -488,7 +487,8 @@ header .call {
   header .call .phone {
     border-bottom: 1px solid #5b4b4b;
     letter-spacing: 0.06rem;
-    padding-bottom: 4%; }
+    padding-bottom: 4%;
+    margin: 0 auto; }
   header .call .button_box {
     padding-top: 10.5%; }
     header .call .button_box .button {
@@ -587,15 +587,16 @@ section.houses {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    font-family: Arial;
+    font-family: "ArialMT";
     font-size: 12px;
     margin-top: 14px; }
     .form-bg form label {
       margin-bottom: 5px;
       color: white; }
     .form-bg form input {
-      padding: 5px 0;
-      color: #cfcfcf; }
+      padding: 5px 10%;
+      color: #cfcfcf;
+      color: black; }
     .form-bg form .form_text {
       margin-right: 5px;
       padding-top: 26px; }
@@ -607,8 +608,7 @@ section.houses {
     .form-bg form .quantity_width {
       width: 12%; }
       .form-bg form .quantity_width input {
-        text-align: right;
-        padding-right: 10%; }
+        text-align: right; }
         .form-bg form .quantity_width input::-webkit-calendar-picker-indicator {
           opacity: 1;
           color: rgba(0, 0, 0, 0);
@@ -663,7 +663,7 @@ section.houses {
     .form-bg form .quantity_width input {
       padding-right: 18%; } }
 section.reviews {
-  font-family: Arial, sans-serif;
+  font-family: "ArialMT";
   font-size: 14px;
   color: #4a3838;
   padding-bottom: 1%; }
@@ -744,7 +744,7 @@ section.reviews {
         section.reviews .reviews-box .border_inside .text_box .link {
           margin-top: 3%; }
           section.reviews .reviews-box .border_inside .text_box .link a {
-            color: #5db5d4; }
+            color: #1b97c3; }
   section.reviews .all_reviews {
     position: relative;
     top: -42px;
@@ -892,7 +892,7 @@ footer {
         font-size: 24px; }
         footer .footer_content .footer_contacts .phone_number span {
           font-size: 13px;
-          color: #5db5d4; }
+          color: #1b97c3; }
       footer .footer_content .footer_contacts .footer_inst {
         display: -webkit-box;
         display: -webkit-flex;
@@ -904,14 +904,15 @@ footer {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center;
-        color: #5db5d4;
+        color: #1b97c3;
         margin-top: 6%; }
         footer .footer_content .footer_contacts .footer_inst img {
           margin-right: 6%; }
 
 section.cop {
   margin-top: 3%;
-  padding-bottom: 2.3%; }
+  padding-bottom: 2.3%;
+  font-size: 13px; }
   section.cop .copyrights {
     display: -webkit-box;
     display: -webkit-flex;
@@ -932,7 +933,7 @@ section.cop {
     text-align: center;
     line-height: 1.5rem; }
     section.cop .copyrights a {
-      color: #5db5d4; }
+      color: #1b97c3; }
 
 header {
   background: url("../images/main/bg-header.jpg") no-repeat center top;
@@ -946,6 +947,7 @@ header {
   .offer .line .icon_img::before {
     background: url("../images/main/icon-offer.png") no-repeat center; }
   .offer h2 {
+    font-family: "ArialMT";
     font-size: 14px;
     margin-top: 47px;
     line-height: 2rem; }
