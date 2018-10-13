@@ -1,0 +1,83 @@
+.flex__column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+header .menu {
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  background-color: #4b3939;
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  margin-left: 21.5%;
+  min-width: 117px;
+  padding: 0 13px;
+  z-index: 10; }
+  @media screen and (max-width: 1440px) {
+    header .menu {
+      margin-left: 1.5%; } }
+  header .menu a {
+    color: #e4b05c;
+    font-size: 13px; }
+header .logo_bg {
+  position: relative;
+  width: 21vh;
+  max-height: 166px;
+  max-width: 166px;
+  height: 21vh;
+  background-color: white;
+  border-radius: 100%;
+  margin: 0 auto; }
+  header .logo_bg .logo_img {
+    background: url("../images/logo.svg") no-repeat center top;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    max-width: 130px;
+    max-height: 130px;
+    background-size: contain; }
+header nav {
+  width: 75%;
+  margin: 0 auto; }
+  header nav a {
+    border-bottom: 1px solid #5b4b4b;
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh; }
+    header nav a:last-child {
+      border-bottom: none; }
+    header nav a:hover, header nav a:active {
+      color: white;
+      transition: all 0.3s linear; }
+header .call {
+  margin-bottom: 4vh; }
+  header .call p {
+    padding-bottom: 2vh;
+    color: #e4b05c; }
+  header .call .phone {
+    border-bottom: 1px solid #5b4b4b;
+    letter-spacing: 0.06rem;
+    padding-bottom: 4%;
+    margin: 0 auto; }
+  header .call .button_box {
+    padding-top: 10.5%; }
+    header .call .button_box .button {
+      text-transform: uppercase;
+      font-size: 10px;
+      color: #4e3c3c;
+      margin-top: 6%;
+      background-color: #e4b05c;
+      padding: 3.5% 7.9%;
+      margin-right: 3%; }
+
+/*# sourceMappingURL=menu.css.map */

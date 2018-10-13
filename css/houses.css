@@ -362,7 +362,8 @@ a:hover {
   color: #4a3838; }
 
 .font_ArialB {
-  font-family: "Arial-BoldMT"; }
+  font-family: "Arial-BoldMT";
+  font-weight: bold; }
 
 .font_ArialR {
   font-family: "ArialMT"; }
@@ -457,16 +458,16 @@ header .logo_bg {
   height: 21vh;
   background-color: white;
   border-radius: 100%;
-  margin: 0 auto; }
-  header .logo_bg:before {
-    content: "";
-    position: absolute;
+  margin: 0 auto;
+  padding: 10% 0; }
+  header .logo_bg .logo_img {
     background: url("../images/logo.svg") no-repeat center top;
-    width: 130px;
-    height: 130px;
-    left: 11%;
-    background-size: contain;
-    top: 15%; }
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    max-width: 130px;
+    max-height: 130px;
+    background-size: contain; }
 header nav {
   width: 75%;
   margin: 0 auto; }
@@ -595,10 +596,9 @@ section.houses {
       color: white; }
     .form-bg form input {
       padding: 5px 10%;
-      color: #cfcfcf;
       color: black; }
     .form-bg form .form_text {
-      margin-right: 5px;
+      margin-right: 10px;
       padding-top: 26px; }
     .form-bg form .arrival_width {
       width: 13%;
