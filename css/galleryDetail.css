@@ -506,7 +506,8 @@ header .call {
   color: white;
   padding-bottom: 3%; }
   .form-bg .line {
-    border: none; }
+    border: none;
+    margin: 0; }
     .form-bg .line .icon_img {
       top: -20px;
       background: url("../images/form-clock-bg.png") no-repeat;
@@ -530,9 +531,11 @@ header .call {
     font-size: 12px;
     margin-top: 14px; }
     .form-bg form label {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      color: white; }
     .form-bg form input {
-      padding: 5px 0; }
+      padding: 5px 0;
+      color: #cfcfcf; }
     .form-bg form .form_text {
       margin-right: 5px;
       padding-top: 26px; }
@@ -543,6 +546,20 @@ header .call {
       width: 13%; }
     .form-bg form .quantity_width {
       width: 12%; }
+      .form-bg form .quantity_width input {
+        text-align: right;
+        padding-right: 10%; }
+        .form-bg form .quantity_width input::-webkit-calendar-picker-indicator {
+          opacity: 1;
+          color: rgba(0, 0, 0, 0);
+          display: block;
+          background: url("../images/form-arrows-bottom.jpg") no-repeat;
+          width: 10px;
+          height: 6px;
+          position: relative;
+          right: -9px;
+          top: 2px;
+          cursor: pointer; }
     .form-bg form .phone_width {
       width: 15%; }
     .form-bg form > div {
@@ -563,6 +580,7 @@ header .call {
       align-items: flex-end;
       margin-left: 1%; }
       .form-bg form .button_box .button {
+        color: white;
         background-color: #e4b05c;
         text-transform: uppercase;
         padding: 7px 39px;
@@ -739,17 +757,32 @@ section.fishing .list {
       display: none; }
 section.fishing .margin_big_img {
   margin-top: 4%; }
-section.fishing .slider-for .slick-slide img {
+section.fishing .slider-for .slick-slide .image {
   height: 429px;
   width: 100%;
   border-radius: 40px; }
+section.fishing .image.first {
+  background: url("../images/housesDetail/main-img.jpg") no-repeat center;
+  background-size: cover; }
+section.fishing .image.two {
+  background: url("../images/housesDetail/main-img.jpg") no-repeat center;
+  background-size: cover; }
+section.fishing .image.tree {
+  background: url("../images/housesDetail/main-img.jpg") no-repeat center;
+  background-size: cover; }
+section.fishing .image.four {
+  background: url("../images/housesDetail/main-img.jpg") no-repeat center;
+  background-size: cover; }
+section.fishing .image.five {
+  background: url("../images/housesDetail/main-img.jpg") no-repeat center;
+  background-size: cover; }
 section.fishing .slider-nav {
   max-height: 140px; }
   section.fishing .slider-nav .slick-slide {
     margin: 0 7px;
     border-radius: 20px;
     box-shadow: inset 0 0 0 140px rgba(0, 0, 0, 0.34); }
-    section.fishing .slider-nav .slick-slide img {
+    section.fishing .slider-nav .slick-slide .image {
       border-radius: 20px;
       width: 100%;
       height: 140px;

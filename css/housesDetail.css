@@ -506,7 +506,8 @@ header .call {
   color: white;
   padding-bottom: 3%; }
   .form-bg .line {
-    border: none; }
+    border: none;
+    margin: 0; }
     .form-bg .line .icon_img {
       top: -20px;
       background: url("../images/form-clock-bg.png") no-repeat;
@@ -530,9 +531,11 @@ header .call {
     font-size: 12px;
     margin-top: 14px; }
     .form-bg form label {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      color: white; }
     .form-bg form input {
-      padding: 5px 0; }
+      padding: 5px 0;
+      color: #cfcfcf; }
     .form-bg form .form_text {
       margin-right: 5px;
       padding-top: 26px; }
@@ -543,6 +546,20 @@ header .call {
       width: 13%; }
     .form-bg form .quantity_width {
       width: 12%; }
+      .form-bg form .quantity_width input {
+        text-align: right;
+        padding-right: 10%; }
+        .form-bg form .quantity_width input::-webkit-calendar-picker-indicator {
+          opacity: 1;
+          color: rgba(0, 0, 0, 0);
+          display: block;
+          background: url("../images/form-arrows-bottom.jpg") no-repeat;
+          width: 10px;
+          height: 6px;
+          position: relative;
+          right: -9px;
+          top: 2px;
+          cursor: pointer; }
     .form-bg form .phone_width {
       width: 15%; }
     .form-bg form > div {
@@ -563,6 +580,7 @@ header .call {
       align-items: flex-end;
       margin-left: 1%; }
       .form-bg form .button_box .button {
+        color: white;
         background-color: #e4b05c;
         text-transform: uppercase;
         padding: 7px 39px;
@@ -730,19 +748,19 @@ section.houses_detail .slider {
     height: 420px;
     width: 100%; }
   section.houses_detail .slider .image.first {
-    background: url("../images/houses-slider/1-slide.png") no-repeat center;
+    background: url("../images/housesDetail/main-img.jpg") no-repeat center;
     background-size: cover; }
   section.houses_detail .slider .image.two {
-    background: url("../images/houses-slider/2-slide.png") no-repeat center;
+    background: url("../images/housesDetail/main-img.jpg") no-repeat center;
     background-size: cover; }
   section.houses_detail .slider .image.tree {
-    background: url("../images/houses-slider/3-slide.jpg") no-repeat center;
+    background: url("../images/housesDetail/main-img.jpg") no-repeat center;
     background-size: cover; }
   section.houses_detail .slider .image.four {
-    background: url("../images/houses-slider/1-slide.png") no-repeat center;
+    background: url("../images/housesDetail/main-img.jpg") no-repeat center;
     background-size: cover; }
   section.houses_detail .slider .image.five {
-    background: url("../images/houses-slider/2-slide.png") no-repeat center;
+    background: url("../images/housesDetail/main-img.jpg") no-repeat center;
     background-size: cover; }
   section.houses_detail .slider .slider-nav {
     max-height: 140px;

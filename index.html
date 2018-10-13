@@ -134,23 +134,32 @@
         </h2>
         <form action="">
             <p class="form_text">С</p>
-            <div class="flex__column arrival_width media_laptop_width">
+            <div class="flex__column arrival_width">
                 <label for="arrival">Дата заезда</label>
                 <input type="text" placeholder="Дата заезда" id="arrival">
             </div>
-            <div class="flex__column departure_width media_laptop_width">
+            <div class="flex__column departure_width">
                 <label for="departure">Дата выезда</label>
                 <input type="text" placeholder="Дата выезда" id="departure">
             </div>
-            <div class="flex__column quantity_width media_laptop_width">
+            <div class="flex__column quantity_width">
                 <label for="quantity">Кол-во человек</label>
-                <input type="text" placeholder="" id="quantity">
+                <input type="text" placeholder="1" id="quantity" list="quantityList">
+                <datalist id="quantityList">
+                    <select> <!--to support safari-->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </datalist>
             </div>
-            <div class="flex__column live_margin media_laptop_width">
+            <div class="flex__column live_margin">
                 <label for="live">Где Вы хотите жить</label>
                 <input type="text" placeholder="Где Вы хотите жить" id="live">
             </div>
-            <div class="flex__column phone_width media_laptop_width">
+            <div class="flex__column phone_width">
                 <label for="phone">Контактный телефон</label>
                 <input type="text" placeholder="Контактный телефон" id="phone">
             </div>
@@ -285,7 +294,5 @@
         </div>
     </div>
 </section>
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>

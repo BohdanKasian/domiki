@@ -7,6 +7,7 @@
   padding-bottom: 3%
   .line
     border: none
+    margin: 0
     .icon_img
       top: -20px
       background: url("../images/form-clock-bg.png") no-repeat
@@ -27,8 +28,10 @@
     margin-top: 14px
     label
       margin-bottom: 5px
+      color: white
     input
       padding: 5px 0
+      color: #cfcfcf
     .form_text
       margin-right: 5px
       padding-top: 26px
@@ -39,6 +42,20 @@
       width: 13%
     .quantity_width
       width: 12%
+      input
+        text-align: right
+        padding-right: 10%
+        &::-webkit-calendar-picker-indicator
+          opacity: 1
+          color: rgba(0, 0, 0,0)
+          display: block
+          background: url("../images/form-arrows-bottom.jpg") no-repeat
+          width: 10px
+          height: 6px
+          position: relative
+          right: -9px
+          top: 2px
+          cursor: pointer
     .phone_width
       width: 15%
     >div
@@ -51,6 +68,7 @@
       @include align-items(flex-end)
       margin-left: 1%
       .button
+        color: white
         background-color: #e4b05c
         text-transform: uppercase
         padding: 7px 39px
