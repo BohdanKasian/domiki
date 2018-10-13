@@ -727,10 +727,22 @@ section.reviews {
           margin-top: 5%; }
         section.reviews .reviews-box .border_inside .text_box .link {
           margin-top: 3%; }
+          section.reviews .reviews-box .border_inside .text_box .link a {
+            color: #5db5d4; }
   section.reviews .all_reviews {
     position: relative;
     top: -42px;
-    left: -25px; }
+    left: -25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
     section.reviews .all_reviews .blue_circle {
       width: 110px;
       height: 110px;
@@ -758,14 +770,15 @@ section.reviews {
     section.reviews .all_reviews .all_reviews__link {
       text-transform: uppercase;
       font-size: 14px;
-      color: white; }
+      color: white;
+      margin-left: 4%; }
     section.reviews .all_reviews .orange_circle {
       position: absolute;
       background-color: #e4b05c;
       border-radius: 50%;
       width: 110px;
       height: 110px;
-      left: 46%;
+      left: 47.5%;
       z-index: 0;
       top: 0; }
 

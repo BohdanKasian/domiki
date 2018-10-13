@@ -85,10 +85,14 @@ section.reviews
           margin-top: 5%
         .link
           margin-top: 3%
+          a
+            color: #5db5d4
   .all_reviews
     position: relative
     top: -42px
     left: -25px
+    @include flexbox
+    @include justify-content(center)
     .blue_circle
       width: 110px
       height: 110px
@@ -105,12 +109,13 @@ section.reviews
       text-transform: uppercase
       font-size: 14px
       color: white
+      margin-left: 4%
     .orange_circle
       position: absolute
       background-color: #e4b05c
       border-radius: 50%
       width: 110px
       height: 110px
-      left: 46%
+      left: 47.5%
       z-index: 0
       top: 0
