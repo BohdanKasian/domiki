@@ -336,7 +336,7 @@ a:hover {
 
 .line {
   position: relative;
-  border: 1px solid #e8ddd3;
+  border: 0.5px solid #e8ddd3;
   width: 100%;
   margin-top: 1%; }
   .line .icon_img {
@@ -359,7 +359,9 @@ a:hover {
   font-size: 30px;
   line-height: 6rem;
   text-align: center;
-  color: #4a3838; }
+  color: #4a3838;
+  font-family: "OldKingC";
+  font-weight: 400; }
 
 .font_ArialB {
   font-family: "Arial-BoldMT";
@@ -447,7 +449,7 @@ header .menu {
   z-index: 10; }
   @media screen and (max-width: 1440px) {
     header .menu {
-      margin-left: 1.5%; } }
+      margin-left: 0; } }
   header .menu a {
     color: #e4b05c;
     font-size: 13px; }
@@ -520,7 +522,8 @@ header .call {
     font-size: 30px;
     text-align: center;
     padding-top: 8.4%;
-    letter-spacing: 0.04rem; }
+    letter-spacing: 0.04rem;
+    font-weight: 400; }
   .form-bg form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -594,7 +597,7 @@ header .call {
 
 footer {
   border-bottom: 1px solid #e6d9ca;
-  padding-bottom: 2%; }
+  padding-bottom: 52px; }
   footer .footer_content {
     padding-top: 3%;
     font-family: "OldKingC", sans-serif;
@@ -617,7 +620,8 @@ footer {
       margin-top: 4%; }
       footer .footer_content .footer_contacts .phone_number {
         color: black;
-        font-size: 24px; }
+        font-size: 24px;
+        font-weight: 400; }
         footer .footer_content .footer_contacts .phone_number span {
           font-size: 13px;
           color: #1b97c3; }
@@ -633,14 +637,19 @@ footer {
         -moz-align-items: center;
         align-items: center;
         color: #1b97c3;
-        margin-top: 6%; }
+        margin-top: 6%;
+        font-family: "ArialMT";
+        font-size: 13px;
+        font-weight: 400; }
         footer .footer_content .footer_contacts .footer_inst img {
           margin-right: 6%; }
 
 section.cop {
-  margin-top: 3%;
-  padding-bottom: 2.3%;
-  font-size: 13px; }
+  margin-top: 63px;
+  padding-bottom: 51px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "ArialMT"; }
   section.cop .copyrights {
     display: -webkit-box;
     display: -webkit-flex;
@@ -672,7 +681,7 @@ section.services {
   section.services .services_line {
     width: 27%;
     margin: 0 auto 4% auto;
-    border: 1px solid #d9d5d5;
+    border: 0.5px solid #d9d5d5;
     position: relative;
     left: -6%; }
     section.services .services_line::before, section.services .services_line::after {
@@ -711,7 +720,8 @@ section.services {
             transform: scale(1.2); }
       section.services .flex__wrap > div h3 {
         margin-top: 9%;
-        font-size: 18px; }
+        font-size: 18px;
+        font-weight: 400; }
       section.services .flex__wrap > div .line {
         margin: 3.5% auto;
         width: 77%; }

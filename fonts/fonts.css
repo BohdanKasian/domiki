@@ -1,8 +1,9 @@
 @font-face {
     font-family: 'OldKingC';
     src: local('☺'),
-    url('OldKingC.otf') format('otf'),
-    url('Albertus Medium.ttf') format('truetype');
+    url('SPSLOldKingC.woff') format('woff'),
+    url('SPSLOldKingC.ttf') format('truetype'),
+    url('SPSLOldKingC.otf');
     font-weight: normal;
     font-style: normal;
 }
