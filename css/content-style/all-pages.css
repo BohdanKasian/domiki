@@ -1,3 +1,116 @@
+body {
+  font-family: "OldKingC", sans-serif; }
 
+a:hover {
+  opacity: 0.9; }
+
+.wrapper {
+  width: 65%;
+  max-width: 956px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1440px) {
+    .wrapper {
+      margin: 0 auto 0 20%;
+      width: 80%; } }
+
+.pink_line {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #fcf8f0; }
+  .pink_line .semicircle {
+    position: absolute;
+    border-radius: 50%;
+    left: 39%;
+    top: -78px;
+    width: 105px;
+    height: 105px;
+    background-color: inherit; }
+
+.line {
+  position: relative;
+  border: 0.5px solid #e8ddd3;
+  width: 100%;
+  margin-top: 1%; }
+  .line .icon_img {
+    border-radius: 50%;
+    position: absolute;
+    left: 43.5%;
+    top: -46px;
+    width: 105px;
+    height: 105px;
+    background-color: white; }
+    .line .icon_img::before {
+      content: "";
+      width: 90%;
+      height: 90%;
+      position: absolute;
+      background-size: contain; }
+
+.title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 6rem;
+  text-align: center;
+  color: #4a3838;
+  font-family: "OldKingC";
+  font-weight: 400; }
+
+.font_ArialB {
+  font-family: "Arial-BoldMT";
+  font-weight: bold; }
+
+.font_ArialR {
+  font-family: "ArialMT"; }
+
+.flex__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around; }
+
+.flex__around {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around; }
+
+.flex_items__start {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+
+.flex__between {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=all-pages.css.map */

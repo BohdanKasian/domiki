@@ -12,40 +12,37 @@
   flex-direction: column; }
 
 header .menu {
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
   background-color: #4b3939;
   text-align: center;
   height: 100vh;
   position: fixed;
-  margin-left: 21.5%;
+  margin-left: 0;
   min-width: 117px;
   padding: 0 13px;
   z-index: 10; }
-  @media screen and (max-width: 1440px) {
-    header .menu {
-      margin-left: 1.5%; } }
   header .menu a {
     color: #e4b05c;
     font-size: 13px; }
 header .logo_bg {
   position: relative;
-  width: 21vh;
-  max-height: 166px;
-  max-width: 166px;
-  height: 21vh;
+  height: 130px;
+  width: 130px;
   background-color: white;
   border-radius: 100%;
-  margin: 0 auto; }
+  margin: 20px auto 30px auto;
+  padding: 10% 0; }
   header .logo_bg .logo_img {
     background: url("../images/logo.svg") no-repeat center top;
     margin: 0 auto;
     width: 90%;
     height: 90%;
-    max-width: 130px;
-    max-height: 130px;
+    max-width: 107px;
+    max-height: 76px;
     background-size: contain; }
 header nav {
   width: 75%;

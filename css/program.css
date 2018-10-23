@@ -314,7 +314,7 @@ a:hover {
 .wrapper {
   width: 65%;
   max-width: 956px;
-  margin: 0 auto 0 34%; }
+  margin: 0 auto; }
   @media screen and (max-width: 1440px) {
     .wrapper {
       margin: 0 auto 0 20%;
@@ -443,13 +443,10 @@ header .menu {
   text-align: center;
   height: 100vh;
   position: fixed;
-  margin-left: 21.5%;
+  margin-left: 0;
   min-width: 117px;
   padding: 0 13px;
   z-index: 10; }
-  @media screen and (max-width: 1440px) {
-    header .menu {
-      margin-left: 0; } }
   header .menu a {
     color: #e4b05c;
     font-size: 13px; }
@@ -718,19 +715,20 @@ section.program {
       width: 100%;
       font-weight: 400; }
     section.program .flex__wrap > div .line {
-      margin: 5% auto 1%;
+      margin: 7px auto 6px;
       border: none;
       border-top: 1px solid #c8c3c3;
       border-bottom: 1px solid #c8c3c3;
-      padding-bottom: 1%;
+      padding-bottom: 2px;
       width: 77%; }
     section.program .flex__wrap > div .font_ArialB {
       font-family: "Arial-BoldMT";
-      font-weight: bold; }
+      font-weight: bold;
+      line-height: 20px; }
     section.program .flex__wrap > div .font_ArialR {
       font-family: "ArialMT";
       width: 92%;
-      margin: 0 auto 16px auto; }
+      margin: 0 auto 6px auto; }
     section.program .flex__wrap > div p {
       color: #4a3838;
       font-size: 14px; }
