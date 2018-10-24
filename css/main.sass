@@ -9,12 +9,17 @@
 @import "content-style/footer-style"
 @import "mixin/_mixinFlexWebkit.scss"
 
-header
-  background: url("../images/main/bg-header.jpg") no-repeat center top
+.slick-initialized .slick-slide
+  outline: none
+
+.slider
   height: 100vh
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  background-size: cover
+  .item
+    height: 100vh
+    width: 100vw
+    img
+      width: 100%
+      height: 100%
 
 .offer
   color: #352b2b
