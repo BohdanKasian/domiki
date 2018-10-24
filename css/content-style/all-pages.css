@@ -7,7 +7,7 @@ a:hover {
 .wrapper {
   width: 65%;
   max-width: 956px;
-  margin: 0 auto; }
+  margin: 0 autogi; }
   @media screen and (max-width: 1440px) {
     .wrapper {
       margin: 0 auto 0 20%;
