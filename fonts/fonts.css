@@ -26,7 +26,9 @@
 @font-face {
     font-family: 'Arial-BoldMT';
     src: local('☺'),
-    url('Arial-BoldMT.ttf') format('truetype');
+    url('Arial-BoldMT.woff') format('woff'),
+    url('Arial-BoldMT.ttf') format('truetype'),
+    url('Arial-BoldMT.otf');
     font-weight: normal;
     font-style: normal;
 }

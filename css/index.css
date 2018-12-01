@@ -1,0 +1,92 @@
+.slick-initialized .slick-slide {
+  outline: none; }
+
+.mane-page-slider {
+  height: 100vh; }
+  .mane-page-slider .item {
+    height: 100vh;
+    width: 100vw; }
+    .mane-page-slider .item img {
+      width: 100%;
+      height: 100%; }
+
+.offer {
+  color: #352b2b; }
+  .offer .line .icon_img::before {
+    background: url("../images/main/icon-offer.png") no-repeat center; }
+  .offer h2 {
+    font-family: "ArialMT";
+    font-size: 14px;
+    margin-top: 47px;
+    line-height: 2rem;
+    font-weight: 400; }
+  .offer .offer_content {
+    padding: 48px 2% 0 0; }
+    .offer .offer_content > a {
+      margin-right: 3%; }
+    .offer .offer_content .content {
+      text-align: center;
+      font-size: 18px;
+      color: #4a3838;
+      height: 272px; }
+      .offer .offer_content .content div:first-child {
+        border-radius: 50%;
+        width: 211px;
+        height: 211px; }
+      .offer .offer_content .content .houses_img {
+        background: url("../images/main/houses-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .fishing_img {
+        background: url("../images/main/fishing-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .bathhouse_img {
+        background: url("../images/main/bathhouse-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .waterfalls_img {
+        background: url("../images/main/waterfalls-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .shooting_img {
+        background: url("../images/main/shooting-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .excursions_img {
+        background: url("../images/main/excursions-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .icon {
+        border-radius: 50%;
+        background-color: #fcf8f0;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        left: 6%;
+        bottom: 25%; }
+        .offer .offer_content .content .icon::before {
+          content: "";
+          position: absolute;
+          background-size: contain;
+          width: 70%;
+          height: 70%;
+          left: 13%;
+          bottom: 15%; }
+      .offer .offer_content .content .icon.houses::before {
+        background: url("../images/main/houses-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.fishing::before {
+        background: url("../images/main/fishing-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.bathhouse::before {
+        background: url("../images/main/bathhouse-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.waterfalls::before {
+        background: url("../images/main/waterfalls-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.shooting::before {
+        background: url("../images/main/shooting-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.excursions::before {
+        background: url("../images/main/excursions-icon.png") no-repeat center; }
+      .offer .offer_content .content p {
+        position: relative;
+        bottom: 25%; }
+      .offer .offer_content .content .excursions_text__width {
+        width: 50%;
+        margin: 0 auto; }
+
+section.houses {
+  margin-top: 4%; }
+
+/*# sourceMappingURL=index.css.map */

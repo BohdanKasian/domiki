@@ -1,5 +1,4 @@
 section.houses {
-  margin-top: 4%;
   background-color: #fcf8f0;
   text-align: center;
   padding-bottom: 3.3%; }
@@ -9,12 +8,16 @@ section.houses {
     border: none;
     border-bottom: 1px solid #e8ddd3; }
     section.houses .line .icon_img {
-      background-color: #fcf8f0; }
+      background-color: #fcf8f0;
+      top: -25px; }
       section.houses .line .icon_img::before {
         left: 7%;
         background: url("../images/main/sectionHouses-icon.png") no-repeat center; }
   section.houses .title {
-    margin-top: 2.5%; }
+    margin-top: 3.5%; }
+  section.houses a {
+    width: 27%;
+    min-width: 230px; }
   section.houses .border_inside {
     background-color: #efeae3;
     overflow: hidden;
@@ -46,10 +49,13 @@ section.houses {
       left: -40px; }
     section.houses .border_inside::after {
       right: -40px; }
+    section.houses .border_inside img {
+      width: 100%;
+      height: auto; }
   section.houses p {
     font-family: "Arial-I";
     color: #1b97c3;
     width: 50%;
     margin: 0 auto; }
 
-/*# sourceMappingURL=houses-style.css.mapss.map */
+/*# sourceMappingURL=houses-style.css.map */

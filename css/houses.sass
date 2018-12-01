@@ -1,13 +1,4 @@
-@import "normalize"
-@import "reset"
-@import "content-style/all-pages"
-@import "content-style/menu"
-@import "content-style/houses-style"
-@import "content-style/form-style"
-@import "content-style/footer-style"
-@import "mixin/_mixinFlexWebkit.scss"
-
-.slider
+.slider_houses
   height: 100vh
   width: 100%
   .item
@@ -18,22 +9,22 @@
       height: 100%
       @media screen and (min-width: 300px)
         width: 100vw 
-.slick-initialized .slick-slide
-  outline: none
-.slick-list
-  height: 100vh
-.slick-dotted.slick-slider
-  margin: 0
-.slick-dots
-  bottom: 1%
-  right: 17%
-  text-align: right
-.slick-dots li.slick-active button:before
-  opacity: 1
-  color: orange
-.slick-dots li button:before
-  opacity: 1
-  color: slategrey
+  .slick-initialized .slick-slide
+    outline: none
+  .slick-list
+    height: 100vh
+  .slick-dotted.slick-slider
+    margin: 0
+  .slick-dots
+    bottom: 1%
+    right: 17%
+    text-align: right
+  .slick-dots li.slick-active button:before
+    opacity: 1
+    color: orange
+  .slick-dots li button:before
+    opacity: 1
+    color: slategrey
 
 section.houses
   .houses_line

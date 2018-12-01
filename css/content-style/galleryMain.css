@@ -1,3 +1,67 @@
-
+section.gallery {
+  background-color: #fcf8f0;
+  text-align: center;
+  padding-bottom: 50px; }
+  section.gallery .line {
+    padding-top: 2%;
+    border: none;
+    border-bottom: 1px solid #e8ddd3; }
+    section.gallery .line .icon_img {
+      background-color: #fcf8f0;
+      top: -24px; }
+      section.gallery .line .icon_img::before {
+        background: url("../images/gallery/gallery-icon.png") no-repeat;
+        left: 19%;
+        top: 21%; }
+  section.gallery .title {
+    margin-top: 3%; }
+  section.gallery .gallery_content a p {
+    font-family: "Arial-I";
+    color: #1b97c3;
+    font-size: 18px;
+    margin-top: 31px; }
+  section.gallery .gallery_content .bg-img.nature::before {
+    left: -16px;
+    top: -5px; }
+  section.gallery .gallery_content .bg-img.nature::after {
+    left: -3px;
+    bottom: -13px; }
+  section.gallery .gallery_content .bg-img.sights::before {
+    top: -13px;
+    left: -4px; }
+  section.gallery .gallery_content .bg-img.sights::after {
+    left: 9px;
+    top: 0px; }
+  section.gallery .gallery_content .bg-img.waterfalls::before {
+    top: 8px;
+    left: 7px; }
+  section.gallery .gallery_content .bg-img.waterfalls::after {
+    left: 17px;
+    top: 18px; }
+  section.gallery .gallery_content .bg-img {
+    display: block;
+    width: 286px;
+    height: 286px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; }
+    @media screen and (max-width: 1200px) {
+      section.gallery .gallery_content .bg-img {
+        width: 250px;
+        height: 250px; } }
+    section.gallery .gallery_content .bg-img::before, section.gallery .gallery_content .bg-img::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      z-index: -2; }
+    section.gallery .gallery_content .bg-img::before {
+      border: 1px solid #e6b668; }
+    section.gallery .gallery_content .bg-img::after {
+      border: 1px solid #125c75; }
+    section.gallery .gallery_content .bg-img img {
+      width: 100%;
+      height: auto; }
 
 /*# sourceMappingURL=galleryMain.css.map */
