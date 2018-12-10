@@ -3,19 +3,6 @@
   @include flex-direction(column)
 
 header
-  .menu
-    @include justify-content(space-between)
-    background-color: #4b3939
-    text-align: center
-    height: 100vh
-    position: fixed
-    margin-left: 0
-    min-width: 117px
-    padding: 0 13px
-    z-index: 10
-    a
-      color: #e4b05c
-      font-size: 13px
   .logo_bg
     position: relative
     height: 130px
@@ -30,8 +17,52 @@ header
       width: 90%
       height: 90%
       max-width: 107px
-      max-height: 76px 
+      max-height: 76px
       background-size: contain
+  .logo_mobile_pos
+    position: absolute
+    margin-left: 42.5vw
+    margin-top: 32vh
+    z-index: 1
+    @media screen and (max-width: 320px)
+      margin-left: 31.5vw
+    .logo_bg.mobile
+      @media screen and (min-width: 1025px)
+        display: none
+  .menu
+    @include justify-content(space-between)
+    background-color: #4b3939
+    text-align: center
+    height: 100vh
+    position: fixed
+    margin-left: 0
+    min-width: 117px
+    padding: 0 13px
+    z-index: 10
+    @media screen and (max-width: 1024px)
+      margin: 0 34vw
+      position: fixed
+      width: 319px
+      height: auto
+      padding: 0
+      @include flex-direction(column-reverse)
+    @media screen and (max-width: 768px)
+      margin: 0 32vw
+    @media screen and (max-width: 425px)
+      margin: 0 13vw
+    @media screen and (max-width: 375px)
+      margin: 0 8vw
+    @media screen and (max-width: 320px)
+      margin: 0
+    .menu_dd
+      @media screen and (max-width: 1024px)
+        display: none
+    .logo_bg
+      @media screen and (max-width: 1024px)
+        display: none
+    a
+      color: #e4b05c
+      font-size: 13px
   nav
     width: 75%
     margin: 0 auto
@@ -47,16 +78,31 @@ header
         transition: all 0.3s linear
   .call
     margin-bottom: 4vh
+    @media screen and (max-width: 1024px)
+      @include flex-direction(row-reverse)
+      @include align-items(center)
+      margin: 0
     p
       padding-bottom: 2vh
       color: #e4b05c
+      @media screen and (max-width: 1024px)
+        display: none
     .phone
       border-bottom: 1px solid #5b4b4b
       letter-spacing: 0.06rem
       padding-bottom: 4%
       margin: 0 auto
+      @media screen and (max-width: 1024px)
+        color: white
+        font-size: 12px
+        border-bottom: none
+        padding-bottom: 0
+        margin: 0 4px
     .button_box
       padding-top: 10.5%
+      @media screen and (max-width: 1024px)
+        padding-top: 0
+        margin: 10px 11px 16px
       .button
         text-transform: uppercase
         font-size: 10px
@@ -65,3 +111,22 @@ header
         background-color: #e4b05c
         padding: 3.5% 7.9%
         margin-right: 3%
+        @media screen and (max-width: 1024px)
+          padding: 7px 6px
+          margin: 0
+    .button_phone_dd
+      @media screen and (min-width: 1025px)
+        display: none
+      &:active,
+      &:hover
+        box-shadow: inset 0 0 0 25px rgba(0, 0, 0, 0.45)
+      .button_phone_box
+        padding: 10px 12px
+        div
+          width: 24px
+          height: 4px
+          background-color: #f5b255
+          margin: 3px 0 0 0
+          &:first-child
+            margin: 0
+

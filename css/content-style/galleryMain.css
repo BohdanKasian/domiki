@@ -45,10 +45,6 @@ section.gallery {
     border-radius: 50%;
     position: relative;
     z-index: 1; }
-    @media screen and (max-width: 1200px) {
-      section.gallery .gallery_content .bg-img {
-        width: 250px;
-        height: 250px; } }
     section.gallery .gallery_content .bg-img::before, section.gallery .gallery_content .bg-img::after {
       content: "";
       position: absolute;

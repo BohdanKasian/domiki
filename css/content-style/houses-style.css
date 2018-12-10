@@ -15,6 +15,9 @@ section.houses {
         background: url("../images/main/sectionHouses-icon.png") no-repeat center; }
   section.houses .title {
     margin-top: 3.5%; }
+    @media screen and (max-width: 768px) {
+      section.houses .title {
+        margin-top: 40px; } }
   section.houses a {
     width: 27%;
     min-width: 230px; }

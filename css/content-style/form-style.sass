@@ -3,13 +3,18 @@
   background-size: cover
   color: white
   padding-bottom: 69px
+  .wrapper
+    @media screen and (max-width: 1024px)
+      width: 307px
   .line
     border: none
     margin: 0
     .icon_img
       top: -20px
       background: url("../images/form-clock-bg.png") no-repeat
-      left: 43%
+      left: 42%
+      @media screen and (max-width: 1024px)
+        left: 31%
       &::before
         left: 3%
         background: url("../images/form-clock.png") no-repeat center
@@ -20,11 +25,28 @@
     padding-top: 8.4%
     letter-spacing: 0.04rem
     font-weight: 400
+    @media screen and (max-width: 1024px)
+      font-size: 18px
+      padding-top: 66px
   form
     @include flexbox
     font-family: "ArialMT"
     font-size: 12px
     margin-top: 14px
+    @media screen and (max-width: 1024px)
+      @include flex-direction(column)
+    .flexbox_form
+      @include flexbox
+      @media screen and (max-width: 1024px)
+        margin-bottom: 16px
+    .flexbox_form.margin_fl_form
+      @media screen and (max-width: 1024px)
+        margin-bottom: 10px
+    .flexbox_form.column_mobile
+      @media screen and (max-width: 1024px)
+        @include flex-direction(column)
+        @include align-items(center)
+        margin-bottom: 0
     label
       margin-bottom: 5px
       color: white
@@ -36,34 +58,52 @@
       margin-right: 10px
       padding-top: 26px
     .arrival_width
-      width: 13%
-      margin-right: 4%
+      width: 121px
+      margin-right: 44px
+      @media screen and (max-width: 1024px)
+        width: 118px
+        margin-right: 25px
+      >label
+        @media screen and (max-width: 1024px)
+          margin-left: -20px
     .departure_width
-      width: 13%
+      width: 121px
+      margin-right: 8px
+      @media screen and (max-width: 1024px)
+        width: 137px
+        margin-right: 0
     .quantity_width
-      width: 12%
       position: relative
+      @media screen and (max-width: 1024px)
+        width: 137px
+        margin-right: 25px
     .phone_width
-      width: 15%
-    >div
-      margin-right: 1.2%
+      width: 150px
+      margin-right: 20px
+      @media screen and (max-width: 1024px)
+        margin-right: 0
+        margin-bottom: 22px
     .live_margin
-      margin-right: 2%
-      width: 16%
+      margin-right: 20px
+      @media screen and (max-width: 1024px)
+        width: 137px
     .button_box
       @include flexbox
       @include align-items(flex-end)
-      margin-left: 1%
       .button
         color: white
         background-color: #e4b05c
         text-transform: uppercase
-        padding: 7px 39px
+        padding: 7px 40px
         border: none !important
 .styled_select
   overflow: hidden
   background: url("../images/form-arrows-bottom.png") no-repeat right
   background-color: white
+  width: 117px
+  margin-right: 8px
+  @media screen and (max-width: 1024px)
+    width: 137px
   select
     border: none !important
     background: transparent

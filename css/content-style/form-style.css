@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'flexbox'.
-        on line 24 of form-style.sass, in `flexbox'
-        from line 24 of form-style.sass
+        on line 32 of form-style.sass, in `flexbox'
+        from line 32 of form-style.sass
 
-19:     text-align: center
-20:     padding-top: 8.4%
-21:     letter-spacing: 0.04rem
-22:     font-weight: 400
-23:   form
-24:     @include flexbox
-25:     font-family: "ArialMT"
-26:     font-size: 12px
-27:     margin-top: 14px
-28:     label
-29:       margin-bottom: 5px
+27:     font-weight: 400
+28:     @media screen and (max-width: 1024px)
+29:       font-size: 18px
+30:       padding-top: 66px
+31:   form
+32:     @include flexbox
+33:     font-family: "ArialMT"
+34:     font-size: 12px
+35:     margin-top: 14px
+36:     @media screen and (max-width: 1024px)
+37:       @include flex-direction(column)
 
 Backtrace:
-form-style.sass:24:in `flexbox'
-form-style.sass:24
+form-style.sass:32:in `flexbox'
+form-style.sass:32
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
@@ -82,4 +82,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexbox'.\A         on line 24 of form-style.sass, in `flexbox'\A         from line 24 of form-style.sass\A \A 19:     text-align: center\A 20:     padding-top: 8.4%\A 21:     letter-spacing: 0.04rem\A 22:     font-weight: 400\A 23:   form\A 24:     @include flexbox\A 25:     font-family: \"ArialMT\"\A 26:     font-size: 12px\A 27:     margin-top: 14px\A 28:     label\A 29:       margin-bottom: 5px"; }
+  content: "Error: Undefined mixin 'flexbox'.\A         on line 32 of form-style.sass, in `flexbox'\A         from line 32 of form-style.sass\A \A 27:     font-weight: 400\A 28:     @media screen and (max-width: 1024px)\A 29:       font-size: 18px\A 30:       padding-top: 66px\A 31:   form\A 32:     @include flexbox\A 33:     font-family: \"ArialMT\"\A 34:     font-size: 12px\A 35:     margin-top: 14px\A 36:     @media screen and (max-width: 1024px)\A 37:       @include flex-direction(column)"; }

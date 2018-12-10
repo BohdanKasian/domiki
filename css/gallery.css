@@ -29,8 +29,13 @@ section.gallery .gallery_content > a {
     margin-bottom: 5.5%; }
   section.gallery .gallery_content > a p {
     margin-top: 10%; }
-section.gallery .gallery_content .bg-img {
-  width: 290px;
-  height: 290px; }
+@media screen and (max-width: 1200px) {
+  section.gallery .gallery_content .bg-img {
+    width: 250px;
+    height: 250px; } }
+@media screen and (max-width: 768px) {
+  section.gallery .gallery_content .bg-img {
+    width: 200px;
+    height: 200px; } }
 
 /*# sourceMappingURL=gallery.css.map */
