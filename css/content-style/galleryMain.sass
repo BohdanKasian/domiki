@@ -15,7 +15,12 @@ section.gallery
         top: 21%
   .title
     margin-top: 3%
+    @media screen and (max-width: 768px)
+      margin-top: 45px
   .gallery_content
+    @media screen and (max-width: 768px)
+      @include flex-direction(column)
+      @include align-items(center)
     a
       p
         font-family: "Arial-I"

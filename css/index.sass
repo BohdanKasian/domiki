@@ -97,5 +97,24 @@
         width: 50%
         margin: 0 auto
 
-section.houses
+section.houses.margin_index
   margin-top: 4%
+  @media screen and (max-width: 768px)
+    margin-top: 40px
+
+.mobile_circle
+  @include flexbox
+  @include justify-content(center)
+  margin: 0 auto
+  @media screen and (min-width: 1025px)
+    display: none
+  .circle
+    border-radius: 50%
+    border: 2px solid #4f3535
+    background-color: white
+    width: 7px
+    height: 7px
+    margin: 0 5px
+    &:active,
+    &:hover
+      background-color: #4f3535

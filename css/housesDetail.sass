@@ -3,6 +3,10 @@
     left: 44%
 
 section.houses_detail
+  .title
+    @media screen and (max-width: 768px)
+      text-transform: lowercase
+      margin-top: 30px
   .services_line
     width: 27%
     margin: 0 auto 5% auto
@@ -21,6 +25,8 @@ section.houses_detail
       left: -5px
     &::after
       right: -5px
+    @media screen and (max-width: 768px)
+      width: 80%
   .line
     margin: 3% auto
     border: none
@@ -58,6 +64,10 @@ section.houses_detail
           display: none
   .content
     margin: 2% 0 5% 0
+    @media screen and (max-width: 768px)
+      @include flexbox
+      @include flex-direction(column-reverse)
+      margin: 33px 0 18px 0
   .detail
     display: inline-block
     vertical-align: top
@@ -67,6 +77,8 @@ section.houses_detail
     color: #4a3838
     padding-top: 2.4%
     margin-right: 3%
+    @media screen and (max-width: 768px)
+      width: 100%
     .specifications
       .text
         line-height: 1.5rem
@@ -81,6 +93,9 @@ section.houses_detail
     .other
       width: 64%
       line-height: 1.5rem
+      @media screen and (max-width: 768px)
+        width: 100%
+        margin: 30px 0 25px 0
       a
         display: block
         color: #5db5d4
@@ -120,6 +135,10 @@ section.houses_detail
           border-radius: 10px
           width: 100%
           height: 90px
+      .slick-dots
+        li
+          @media screen and (min-width: 769px)
+            display: none
     .border_inside
       background-color: #efeae3
       overflow: hidden
@@ -154,3 +173,42 @@ section.houses_detail
         left: -40px
       &::after
         right: -40px
+    @media screen and (max-width: 768px)
+      width: 100%
+      .houses-detail-slider-for
+        .image
+          border-radius: inherit
+          height: 318px
+          width: 308px
+      .border_inside
+        background-color: inherit
+        overflow: visible
+        position: static
+        padding: 0
+        margin: 0 0 50px
+        &::before,
+        &::after,
+        .border_inside_bottom::before,
+        .border_inside_bottom::after
+          display: none
+      .houses-detail-slider-nav
+        .slick-list.draggable
+          display: none
+        .slick-dots li button
+          border-radius: 50%
+          border: 2px solid #4f3535
+          background-color: white
+          width: 7px
+          height: 7px
+          margin: 0 5px
+          padding: 0
+        .slick-dots li.slick-active
+          button
+            background-color: #4f3535
+        .slick-dots li button:before
+          display: none
+        .slick-dots
+          margin: 18px 0 30px 0
+          li
+            margin: 0
+

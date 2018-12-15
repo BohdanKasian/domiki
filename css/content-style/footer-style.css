@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'justify-content'.
-        on line 13 of footer-style.sass, in `justify-content'
-        from line 13 of footer-style.sass
+Error: Undefined mixin 'flex-direction'.
+        on line 11 of footer-style.sass, in `flex-direction'
+        from line 11 of footer-style.sass
 
-8:     .footer_link
-9:       font-size: 13px
-10:       width: 38%
-11:       margin-top: 4%
-12:       .flex__column
-13:         @include justify-content(flex-start)
-14:         a
-15:           margin-bottom: 19px
-16:           color: #000
-17:     .footer_contacts
-18:       margin-right: 13%
+6:   .footer_content
+7:     padding-top: 3%
+8:     font-family: "OldKingC", sans-serif
+9:     color: black
+10:     @media screen and (max-width: 1024px)
+11:       @include flex-direction(column)
+12:       @include align-items(center)
+13:     .footer_link
+14:       font-size: 13px
+15:       width: 38%
+16:       margin-top: 4%
 
 Backtrace:
-footer-style.sass:13:in `justify-content'
-footer-style.sass:13
+footer-style.sass:11:in `flex-direction'
+footer-style.sass:11
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
@@ -29,22 +29,14 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:524:in `visit_media'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
@@ -104,4 +96,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'justify-content'.\A         on line 13 of footer-style.sass, in `justify-content'\A         from line 13 of footer-style.sass\A \A 8:     .footer_link\A 9:       font-size: 13px\A 10:       width: 38%\A 11:       margin-top: 4%\A 12:       .flex__column\A 13:         @include justify-content(flex-start)\A 14:         a\A 15:           margin-bottom: 19px\A 16:           color: #000\A 17:     .footer_contacts\A 18:       margin-right: 13%"; }
+  content: "Error: Undefined mixin 'flex-direction'.\A         on line 11 of footer-style.sass, in `flex-direction'\A         from line 11 of footer-style.sass\A \A 6:   .footer_content\A 7:     padding-top: 3%\A 8:     font-family: \"OldKingC\", sans-serif\A 9:     color: black\A 10:     @media screen and (max-width: 1024px)\A 11:       @include flex-direction(column)\A 12:       @include align-items(center)\A 13:     .footer_link\A 14:       font-size: 13px\A 15:       width: 38%\A 16:       margin-top: 4%"; }

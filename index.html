@@ -12,7 +12,7 @@
 <body>
 <header>
     <div class="menu flex__column">
-        <div class="menu_dd">
+        <div class="menu_dd height_menu_mobile" id="menu-dd-js">
             <a href="#">
                 <div class="logo_bg">
                     <div class="logo_img"></div>
@@ -117,13 +117,13 @@
         </div>
     </div>
 </section>
-<section class="houses">
+<section class="houses margin_index">
     <div class="wrapper">
         <div class="line">
             <div class="icon_img"></div>
         </div>
         <h2 class="title">Домики</h2>
-        <div class="flex__wrap">
+        <div class="flex__wrap margin_mobile">
             <a href="housesDetail.html">
                 <div class="border_inside">
                     <div class="border_inside_bottom"></div>
@@ -145,6 +145,13 @@
                 </div>
                 <p>Беседки</p>
             </a>
+        </div>
+
+        <div class="mobile_circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
     </div>
 </section>
@@ -227,7 +234,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review_relative">
+            <div class="review_relative display_none_mobile">
                 <div class="photo right"></div>
                 <div class="reviews border_inside">
                     <div class="content border_inside_bottom">
@@ -253,6 +260,12 @@
                 <div class="blue_circle">Все <br> отзывы</div>
                 <div class="orange_circle"></div>
             </a>
+        </div>
+        <div class="mobile_circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
     </div>
 </section>
@@ -282,20 +295,32 @@
                 <p>Поход к водопадам</p>
             </a>
         </div>
+        <div class="mobile_circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
     </div>
 </section>
 <footer>
     <div class="wrapper">
         <div class="flex__between footer_content">
             <div class="flex__between footer_link">
-                <a href="index.html">Главная</a>
-                <a href="program.html">Программы</a>
-                <a href="reviews.html">Отзывы</a>
-                <a href="houses.html">Домики</a>
-                <a href="gallery.html">Фотогалерея</a>
-                <a href="contact.html">Контакты</a>
-                <a href="services.html">Услуги</a>
-                <a href="price.html">Цены</a>
+                <div class="flex__column">
+                    <a href="index.html">Главная</a>
+                    <a href="houses.html">Домики</a>
+                    <a href="services.html">Услуги</a>
+                </div>
+                <div class="flex__column">
+                    <a href="program.html">Программы</a>
+                    <a href="gallery.html">Фотогалерея</a>
+                    <a href="price.html">Цены</a>
+                </div>
+                <div class="flex__column mobile_style">
+                    <a href="reviews.html">Отзывы</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
             </div>
             <div class="flex__column footer_contacts">
                 <a href="tel:8(928)405-46-42" class="flex__column phone_number">
@@ -304,7 +329,9 @@
                 </a>
                 <a href="#" class="footer_inst">
                     <img src="images/instagram-icon.png" alt="Инстаграм иконка">
-                    Инстаграм
+                    <span>
+                        Инстаграм
+                    </span>
                 </a>
             </div>
         </div>

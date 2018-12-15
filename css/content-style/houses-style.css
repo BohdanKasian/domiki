@@ -2,6 +2,9 @@ section.houses {
   background-color: #fcf8f0;
   text-align: center;
   padding-bottom: 3.3%; }
+  @media screen and (max-width: 1024px) {
+    section.houses {
+      padding-bottom: 64px; } }
   section.houses .line {
     padding-top: 1%;
     margin-top: 0;
@@ -18,6 +21,8 @@ section.houses {
     @media screen and (max-width: 768px) {
       section.houses .title {
         margin-top: 40px; } }
+  section.houses .margin_mobile {
+    margin-bottom: 20px; }
   section.houses a {
     width: 27%;
     min-width: 230px; }

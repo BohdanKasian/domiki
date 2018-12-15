@@ -5,11 +5,17 @@ section.program {
   text-align: center; }
   section.program .title {
     padding-top: 1%; }
+    @media screen and (max-width: 768px) {
+      section.program .title {
+        padding-top: 40px; } }
   section.program .services_line {
     width: 27%;
     margin: 0 auto 4% auto;
     border: 0.5px solid #d9d5d5;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      section.program .services_line {
+        display: none; } }
     section.program .services_line::before, section.program .services_line::after {
       content: "";
       position: absolute;

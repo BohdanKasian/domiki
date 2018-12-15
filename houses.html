@@ -12,7 +12,7 @@
 <body>
 <header>
     <div class="menu flex__column">
-        <div>
+        <div class="menu_dd height_menu_mobile" id="menu-dd-js">
             <a href="#">
                 <div class="logo_bg">
                     <div class="logo_img"></div>
@@ -31,6 +31,14 @@
         </div>
         <div class="call flex__column">
             <p>Телефон</p>
+            <div class="button_phone_dd">
+                <div class="button_phone_box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <a href="tel:8(928)4054642" class="phone">8 (928) 405-46-42</a>
             <div class="button_box">
                 <a href="#" class="button">Заказать звонок</a>
@@ -43,7 +51,7 @@
         <div class="item"><img src="images/houses-slider/3-slide.jpg" alt="3"></div>
     </div>
 </header>
-<section class="houses">
+<section class="houses page_houses">
     <div class="wrapper">
         <div class="line">
             <div class="icon_img"></div>
@@ -55,7 +63,7 @@
                     <div class="border_inside_bottom"></div>
                     <img src="images/main/houses-12-seater.png" alt="Домик 12-х местный + беседка">
                 </div>
-                <p>12-ти местный
+                <p >12-ти местный
                     + беседка</p>
             </a>
             <a href="housesDetail.html">
@@ -157,38 +165,44 @@
             Забронируйте номер прямо сейчас
         </h2>
         <form action="#" id="mainForm">
-            <p class="form_text">С</p>
-            <div class="flex__column arrival_width">
-                <label for="arrival">Дата заезда</label>
-                <input type="text" placeholder="Дата заезда" id="arrival">
-            </div>
-            <div class="flex__column departure_width">
-                <label for="departure">Дата выезда</label>
-                <input type="text" placeholder="Дата выезда" id="departure">
-            </div>
-            <div class="flex__column quantity_width">
-                <label for="quantity">Кол-во человек</label>
-                <div class="arrow_quantity"></div>
-                <div class="styled_select">
-                    <select form="mainForm" id="quantity" onchange="this.setAttribute('data-selected', true)">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+            <div class="flexbox_form">
+                <p class="form_text">С</p>
+                <div class="flex__column arrival_width">
+                    <label for="arrival">Дата заезда</label>
+                    <input type="text" placeholder="Дата заезда" id="arrival">
+                </div>
+                <div class="flex__column departure_width">
+                    <label for="departure">Дата выезда</label>
+                    <input type="text" placeholder="Дата выезда" id="departure">
                 </div>
             </div>
-            <div class="flex__column live_margin">
-                <label for="live">Где Вы хотите жить</label>
-                <input type="text" placeholder="Где Вы хотите жить" id="live">
+            <div class="flexbox_form margin_fl_form">
+                <div class="flex__column quantity_width">
+                    <label for="quantity">Кол-во человек</label>
+                    <div class="arrow_quantity"></div>
+                    <div class="styled_select">
+                        <select form="mainForm" id="quantity" onchange="this.setAttribute('data-selected', true)">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex__column live_margin">
+                    <label for="live">Где Вы хотите жить</label>
+                    <input type="text" placeholder="Где Вы хотите жить" id="live">
+                </div>
             </div>
-            <div class="flex__column phone_width">
-                <label for="phone">Контактный телефон</label>
-                <input type="text" placeholder="Контактный телефон" id="phone">
-            </div>
-            <div class="button_box">
-                <input type="submit" value="Отправить" class="button">
+            <div class="flexbox_form column_mobile">
+                <div class="flex__column phone_width">
+                    <label for="phone">Контактный телефон</label>
+                    <input type="text" placeholder="Контактный телефон" id="phone">
+                </div>
+                <div class="button_box">
+                    <input type="submit" value="Отправить" class="button">
+                </div>
             </div>
         </form>
     </div>
@@ -207,7 +221,7 @@
                     <a href="gallery.html">Фотогалерея</a>
                     <a href="price.html">Цены</a>
                 </div>
-                <div class="flex__column">
+                <div class="flex__column mobile_style">
                     <a href="reviews.html">Отзывы</a>
                     <a href="contact.html">Контакты</a>
                 </div>
@@ -219,7 +233,9 @@
                 </a>
                 <a href="#" class="footer_inst">
                     <img src="images/instagram-icon.png" alt="Инстаграм иконка">
-                    Инстаграм
+                    <span>
+                        Инстаграм
+                    </span>
                 </a>
             </div>
         </div>

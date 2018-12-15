@@ -1,5 +1,7 @@
 .pink_line.gallery_detail_page
   height: 90px
+  @media screen and (max-width: 768px)
+    display: none
   .semicircle
     top: 6px
     left: 43%
@@ -55,11 +57,15 @@ section.fishing
   .title
     padding-top: 1%
     position: relative
+    @media screen and (max-width: 768px)
+      padding-top: 30px
   .services_line
     width: 27%
     margin: 0 auto 4% auto
     border: 0.5px solid #d9d5d5
     position: relative
+    @media screen and (max-width: 768px)
+      width: 64%
     &::before,
     &::after
       content: ""
@@ -109,6 +115,10 @@ section.fishing
         height: 429px
         width: 100%
         border-radius: 40px
+        @media screen and (max-width: 768px)
+          border-radius: inherit
+          height: 318px
+          width: 308px
   .image.first
     background: url("../images/housesDetail/main-img.jpg") no-repeat center
     background-size: cover
@@ -136,6 +146,10 @@ section.fishing
         height: 140px
         position: relative
         z-index: -1
+    .slick-dots
+      li
+        @media screen and (min-width: 769px)
+          display: none
     .slick-current
       box-shadow: none
     .slick-prev,
@@ -143,6 +157,8 @@ section.fishing
       background-size: contain
       width: 20px
       height: 20px
+      @media screen and (max-width: 768px)
+        position: fixed
       &::before
         content: none
     .slick-prev
@@ -183,3 +199,88 @@ section.fishing
       left: -40px
     &::after
       right: -40px
+  @media screen and (max-width: 768px)
+    width: 100%
+    .border_inside
+      background-color: inherit
+      overflow: visible
+      position: static
+      padding: 0
+      width: 317px
+      margin: 37px auto 50px
+      &::before,
+      &::after,
+      .border_inside_bottom::before,
+      .border_inside_bottom::after
+        display: none
+    .gallery-detail-slider-nav
+      .slick-list.draggable
+        display: none
+      .slick-dots li button
+        border-radius: 50%
+        border: 2px solid #4f3535
+        background-color: white
+        width: 7px
+        height: 7px
+        margin: 0 5px
+        padding: 0
+      .slick-dots li.slick-active
+        button
+          background-color: #4f3535
+      .slick-dots li button:before
+        display: none
+      .slick-dots
+        margin: 18px 0 30px 0
+        li
+          margin: 0
+
+.mobile_galdet_text
+  padding: 15px 0 30px
+  @media screen and (min-width: 769px)
+    display: none
+  .border_inside_mob
+    overflow: hidden
+    position: relative
+    background-color: white
+    margin-bottom: 16px
+    text-align: center
+    &::before,
+    &::after,
+    .border_inside_bottom_mob::before,
+    .border_inside_bottom_mob::after
+      position: absolute
+      background-color: #fcf8f0
+      border-radius: 50%
+      content: ""
+      width: 10px
+      height: 10px
+    .border_inside_bottom_mob
+      content: ""
+      width: 100%
+      height: 100%
+      border: 1px solid #e6d9ca
+      padding: 10px 20px
+      &::before,
+      &::after
+        bottom: -5px
+        border-top: 1px solid #e6d9ca
+      &::before
+        left: -5px
+        border-right: 1px solid #e6d9ca
+      &::after
+        right: -5px
+        border-left: 1px solid #e6d9ca
+    &::before,
+    &::after
+      top: -5px
+      border-bottom: 1px solid #e6d9ca
+    &::before
+      left: -5px
+      border-right: 1px solid #e6d9ca
+    &::after
+      right: -5px
+      border-left: 1px solid #e6d9ca
+  a
+    color: #5db5d4
+    font-size: 18px
+    font-family: "OldKingC", sans-serif

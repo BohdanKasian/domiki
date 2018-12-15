@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'flexbox'.
-        on line 77 of galleryDetail.sass, in `flexbox'
-        from line 77 of galleryDetail.sass
+        on line 83 of galleryDetail.sass, in `flexbox'
+        from line 83 of galleryDetail.sass
 
-72:     &::before
-73:       left: -5px
-74:     &::after
-75:       right: -5px
-76:   .list
-77:     @include flexbox
-78:     @include justify-content(center)
-79:     font-size: 13px
-80:     font-family: "ArialMT"
-81:     a
-82:       color: rgba(0,0,0,0.5)
+78:     &::before
+79:       left: -5px
+80:     &::after
+81:       right: -5px
+82:   .list
+83:     @include flexbox
+84:     @include justify-content(center)
+85:     font-size: 13px
+86:     font-family: "ArialMT"
+87:     a
+88:       color: rgba(0,0,0,0.5)
 
 Backtrace:
-galleryDetail.sass:77:in `flexbox'
-galleryDetail.sass:77
+galleryDetail.sass:83:in `flexbox'
+galleryDetail.sass:83
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
@@ -82,4 +82,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexbox'.\A         on line 77 of galleryDetail.sass, in `flexbox'\A         from line 77 of galleryDetail.sass\A \A 72:     &::before\A 73:       left: -5px\A 74:     &::after\A 75:       right: -5px\A 76:   .list\A 77:     @include flexbox\A 78:     @include justify-content(center)\A 79:     font-size: 13px\A 80:     font-family: \"ArialMT\"\A 81:     a\A 82:       color: rgba(0,0,0,0.5)"; }
+  content: "Error: Undefined mixin 'flexbox'.\A         on line 83 of galleryDetail.sass, in `flexbox'\A         from line 83 of galleryDetail.sass\A \A 78:     &::before\A 79:       left: -5px\A 80:     &::after\A 81:       right: -5px\A 82:   .list\A 83:     @include flexbox\A 84:     @include justify-content(center)\A 85:     font-size: 13px\A 86:     font-family: \"ArialMT\"\A 87:     a\A 88:       color: rgba(0,0,0,0.5)"; }

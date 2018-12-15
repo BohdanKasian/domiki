@@ -6,11 +6,17 @@ section.gallery.page_gallery {
 
 section.gallery .title.page_gallery {
   margin-top: 0; }
+  @media screen and (max-width: 768px) {
+    section.gallery .title.page_gallery {
+      margin-top: 40px; } }
 section.gallery .services_line {
   width: 27%;
   margin: 0 auto 5% auto;
   border: 0.5px solid #d9d5d5;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    section.gallery .services_line {
+      width: 63%; } }
   section.gallery .services_line::before, section.gallery .services_line::after {
     content: "";
     position: absolute;
@@ -27,8 +33,14 @@ section.gallery .gallery_content > a {
   margin-right: 18px; }
   section.gallery .gallery_content > a:nth-child(1), section.gallery .gallery_content > a:nth-child(2), section.gallery .gallery_content > a:nth-child(3) {
     margin-bottom: 5.5%; }
+    @media screen and (max-width: 1024px) {
+      section.gallery .gallery_content > a:nth-child(1), section.gallery .gallery_content > a:nth-child(2), section.gallery .gallery_content > a:nth-child(3) {
+        margin-bottom: 24px; } }
   section.gallery .gallery_content > a p {
     margin-top: 10%; }
+    @media screen and (max-width: 768px) {
+      section.gallery .gallery_content > a p {
+        margin-bottom: 45px; } }
 @media screen and (max-width: 1200px) {
   section.gallery .gallery_content .bg-img {
     width: 250px;

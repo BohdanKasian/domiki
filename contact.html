@@ -10,7 +10,7 @@
 <body>
 <header>
     <div class="menu flex__column">
-        <div>
+        <div class="menu_dd height_menu_mobile" id="menu-dd-js">
             <a href="#">
                 <div class="logo_bg">
                     <div class="logo_img"></div>
@@ -29,6 +29,14 @@
         </div>
         <div class="call flex__column">
             <p>Телефон</p>
+            <div class="button_phone_dd">
+                <div class="button_phone_box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <a href="tel:8(928)4054642" class="phone">8 (928) 405-46-42</a>
             <div class="button_box">
                 <a href="#" class="button">Заказать звонок</a>
@@ -80,19 +88,21 @@
                     <a href="gallery.html">Фотогалерея</a>
                     <a href="price.html">Цены</a>
                 </div>
-                <div class="flex__column">
+                <div class="flex__column mobile_style">
                     <a href="reviews.html">Отзывы</a>
                     <a href="contact.html">Контакты</a>
                 </div>
             </div>
             <div class="flex__column footer_contacts">
-                <a href="tel:8 (928) 405-46-42" class="flex__column phone_number">
+                <a href="tel:8(928)405-46-42" class="flex__column phone_number">
                     8 (928) 405-46-42
                     <span>Связаться с нами</span>
                 </a>
                 <a href="#" class="footer_inst">
                     <img src="images/instagram-icon.png" alt="Инстаграм иконка">
-                    Инстаграм
+                    <span>
+                        Инстаграм
+                    </span>
                 </a>
             </div>
         </div>
@@ -106,5 +116,9 @@
         </div>
     </div>
 </section>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

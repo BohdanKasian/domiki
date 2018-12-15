@@ -23,7 +23,7 @@ $('.gallery-detail-slider-nav').slick({
     asNavFor: '.gallery-detail-slider-for',
     focusOnSelect: true,
     arrows: true,
-    dots: false
+    dots: true
 });
 
 //houses detail slider
@@ -41,7 +41,7 @@ $('.houses-detail-slider-nav').slick({
     asNavFor: '.houses-detail-slider-for',
     focusOnSelect: true,
     arrows: false,
-    dots: false
+    dots: true
 });
 
 //page houses slider
@@ -58,4 +58,8 @@ $('.slider_houses').slick({
 //reviews pege FadeIn
 $("#show-js").click(function () {
     $("#showMore-js").toggleClass ("dd__none");
+});
+
+$(".button_phone_dd").click(function () {
+    $("#menu-dd-js").toggleClass ("menu_dd");
 });

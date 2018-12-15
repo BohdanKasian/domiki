@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'flexbox'.
-        on line 25 of contact.sass, in `flexbox'
-        from line 25 of contact.sass
+        on line 30 of contact.sass, in `flexbox'
+        from line 30 of contact.sass
 
-20:     &::before
-21:       left: -5px
-22:     &::after
-23:       right: -5px
-24:   .flex__start
-25:     @include flexbox
-26:     @include align-items(flex-start)
-27:     .inform
-28:       margin-bottom: 4%
-29:       .icon-bg.marker
-30:         background: url("../images/contacts/marker.png") no-repeat center
+25:     &::before
+26:       left: -5px
+27:     &::after
+28:       right: -5px
+29:   .flex__start
+30:     @include flexbox
+31:     @include align-items(flex-start)
+32:     @media screen and (max-width: 768px)
+33:       @include justify-content(center)
+34:     .inform
+35:       margin-bottom: 4%
 
 Backtrace:
-contact.sass:25:in `flexbox'
-contact.sass:25
+contact.sass:30:in `flexbox'
+contact.sass:30
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
@@ -82,4 +82,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexbox'.\A         on line 25 of contact.sass, in `flexbox'\A         from line 25 of contact.sass\A \A 20:     &::before\A 21:       left: -5px\A 22:     &::after\A 23:       right: -5px\A 24:   .flex__start\A 25:     @include flexbox\A 26:     @include align-items(flex-start)\A 27:     .inform\A 28:       margin-bottom: 4%\A 29:       .icon-bg.marker\A 30:         background: url(\"../images/contacts/marker.png\") no-repeat center"; }
+  content: "Error: Undefined mixin 'flexbox'.\A         on line 30 of contact.sass, in `flexbox'\A         from line 30 of contact.sass\A \A 25:     &::before\A 26:       left: -5px\A 27:     &::after\A 28:       right: -5px\A 29:   .flex__start\A 30:     @include flexbox\A 31:     @include align-items(flex-start)\A 32:     @media screen and (max-width: 768px)\A 33:       @include justify-content(center)\A 34:     .inform\A 35:       margin-bottom: 4%"; }

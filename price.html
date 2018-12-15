@@ -10,7 +10,7 @@
 <body>
 <header>
     <div class="menu flex__column">
-        <div>
+        <div class="menu_dd height_menu_mobile" id="menu-dd-js">
             <a href="#">
                 <div class="logo_bg">
                     <div class="logo_img"></div>
@@ -29,6 +29,14 @@
         </div>
         <div class="call flex__column">
             <p>Телефон</p>
+            <div class="button_phone_dd">
+                <div class="button_phone_box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <a href="tel:8(928)4054642" class="phone">8 (928) 405-46-42</a>
             <div class="button_box">
                 <a href="#" class="button">Заказать звонок</a>
@@ -78,6 +86,13 @@
                 <p>1 500 руб./ сут.</p>
             </div>
         </div>
+        <div class="mobile_circle price_circle__padding">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
     </div>
 </section>
 <section class="form-bg">
@@ -89,7 +104,7 @@
             Забронируйте номер прямо сейчас
         </h2>
         <form action="#" id="mainForm">
-            <div>
+            <div class="flexbox_form">
                 <p class="form_text">С</p>
                 <div class="flex__column arrival_width">
                     <label for="arrival">Дата заезда</label>
@@ -100,7 +115,7 @@
                     <input type="text" placeholder="Дата выезда" id="departure">
                 </div>
             </div>
-            <div>
+            <div class="flexbox_form margin_fl_form">
                 <div class="flex__column quantity_width">
                     <label for="quantity">Кол-во человек</label>
                     <div class="arrow_quantity"></div>
@@ -119,7 +134,7 @@
                     <input type="text" placeholder="Где Вы хотите жить" id="live">
                 </div>
             </div>
-            <div>
+            <div class="flexbox_form column_mobile">
                 <div class="flex__column phone_width">
                     <label for="phone">Контактный телефон</label>
                     <input type="text" placeholder="Контактный телефон" id="phone">
@@ -145,7 +160,7 @@
                     <a href="gallery.html">Фотогалерея</a>
                     <a href="price.html">Цены</a>
                 </div>
-                <div class="flex__column">
+                <div class="flex__column mobile_style">
                     <a href="reviews.html">Отзывы</a>
                     <a href="contact.html">Контакты</a>
                 </div>
@@ -157,7 +172,9 @@
                 </a>
                 <a href="#" class="footer_inst">
                     <img src="images/instagram-icon.png" alt="Инстаграм иконка">
-                    Инстаграм
+                    <span>
+                        Инстаграм
+                    </span>
                 </a>
             </div>
         </div>
@@ -171,5 +188,9 @@
         </div>
     </div>
 </section>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

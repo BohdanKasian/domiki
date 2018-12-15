@@ -4,6 +4,8 @@
   .item
     height: 100vh
     width: 70vw
+    @media screen and (max-width: 1024px)
+      width: 100vw
     img
       width: 100%
       height: 100%
@@ -13,8 +15,6 @@
     outline: none
   .slick-list
     height: 100vh
-  .slick-dotted.slick-slider
-    margin: 0
   .slick-dots
     bottom: 1%
     right: 17%
@@ -25,7 +25,8 @@
   .slick-dots li button:before
     opacity: 1
     color: slategrey
-
+.slick-dotted.slick-slider
+  margin: 0
 section.houses
   .houses_line
     width: 20%
@@ -45,4 +46,14 @@ section.houses
       left: -5px
     &::after
       right: -5px
+    @media screen and (max-width: 768px)
+      width: 264px
+      margin: 0 auto 35px
+section.houses.page_houses
+  @media screen and (max-width: 768px)
+    p
+      margin-bottom: 40px
+      width: 100%
+    .icon_img
+      left: 37%
       

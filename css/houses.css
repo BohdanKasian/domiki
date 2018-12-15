@@ -4,6 +4,9 @@
   .slider_houses .item {
     height: 100vh;
     width: 70vw; }
+    @media screen and (max-width: 1024px) {
+      .slider_houses .item {
+        width: 100vw; } }
     .slider_houses .item img {
       width: 100%;
       height: 100%; }
@@ -14,8 +17,6 @@
     outline: none; }
   .slider_houses .slick-list {
     height: 100vh; }
-  .slider_houses .slick-dotted.slick-slider {
-    margin: 0; }
   .slider_houses .slick-dots {
     bottom: 1%;
     right: 17%;
@@ -26,6 +27,9 @@
   .slider_houses .slick-dots li button:before {
     opacity: 1;
     color: slategrey; }
+
+.slick-dotted.slick-slider {
+  margin: 0; }
 
 section.houses .houses_line {
   width: 20%;
@@ -44,5 +48,16 @@ section.houses .houses_line {
     left: -5px; }
   section.houses .houses_line::after {
     right: -5px; }
+  @media screen and (max-width: 768px) {
+    section.houses .houses_line {
+      width: 264px;
+      margin: 0 auto 35px; } }
+
+@media screen and (max-width: 768px) {
+  section.houses.page_houses p {
+    margin-bottom: 40px;
+    width: 100%; }
+  section.houses.page_houses .icon_img {
+    left: 37%; } }
 
 /*# sourceMappingURL=houses.css.map */

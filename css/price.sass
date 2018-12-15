@@ -10,12 +10,25 @@ section.price
     border-bottom: 1px solid #e2dfdf
     padding-bottom: 3px
     width: 100%
+  .title
+    @media screen and (max-width: 768px)
+      margin-top: 39px
   .table
     width: 89%
     margin: 7% 0 10% 0
+    @media screen and (max-width: 768px)
+      width: 100%
+      margin: 0
     .flex__between
       line-height: 2rem
       margin: 1.25% 0
+      @media screen and (max-width: 768px)
+        @include justify-content(center)
+        line-height: 2.5rem
+        &:last-child
+          width: 75%
+          margin: 8% auto 0
+          line-height: 1rem
       a
         font-family: "Arial-I"
         font-size: 16px
@@ -24,6 +37,8 @@ section.price
         font-family: "ArialMT"
         font-size: 14px
         color: #4a3838
+        @media screen and (max-width: 768px)
+          display: none
   .services_line
     width: 27%
     margin: 0 auto 5% auto
@@ -42,3 +57,5 @@ section.price
       left: -5px
     &::after
       right: -5px
+  .price_circle__padding
+    padding: 60px 0 50px 0

@@ -3,8 +3,14 @@
 
 section.index_reviews.page_reviews .title {
   margin-top: 0; }
+  @media screen and (max-width: 768px) {
+    section.index_reviews.page_reviews .title {
+      margin-top: 30px; } }
 section.index_reviews.page_reviews .services_line {
   margin: 0 auto 8% auto; }
+  @media screen and (max-width: 768px) {
+    section.index_reviews.page_reviews .services_line {
+      display: none; } }
 section.index_reviews.page_reviews .services_line {
   width: 27%;
   margin: 0 auto 4% auto;
