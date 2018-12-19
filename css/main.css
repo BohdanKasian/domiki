@@ -370,6 +370,14 @@ a:hover {
   font-family: "OldKingC";
   font-weight: 400; }
 
+@media screen and (max-width: 1024px) {
+  .desktop {
+    display: none; } }
+
+@media screen and (min-width: 1025px) {
+  .mobile {
+    display: none; } }
+
 .font_ArialB {
   font-family: "Arial-BoldMT";
   font-weight: bold; }
@@ -496,7 +504,7 @@ header .menu {
       flex-direction: column-reverse; } }
   @media screen and (max-width: 768px) {
     header .menu {
-      margin: 0 32vw; } }
+      margin: 0 29vw; } }
   @media screen and (max-width: 425px) {
     header .menu {
       margin: 0 13vw; } }
@@ -688,14 +696,33 @@ section.gallery {
       width: 100%;
       height: auto; }
 
+section.gallery.mobile .index_slider_gallery .item {
+  padding-top: 15px; }
+  section.gallery.mobile .index_slider_gallery .item .bg-img {
+    margin-right: 40px;
+    margin-left: 25px; }
+section.gallery.mobile .index_slider_gallery .slick-dots li button {
+  border-radius: 50%;
+  border: 2px solid #4f3535;
+  background-color: white;
+  width: 7px;
+  height: 7px;
+  margin: 0 5px;
+  padding: 0; }
+section.gallery.mobile .index_slider_gallery .slick-dots li.slick-active button {
+  background-color: #4f3535; }
+section.gallery.mobile .index_slider_gallery .slick-dots li button:before {
+  display: none; }
+section.gallery.mobile .index_slider_gallery .slick-dots li {
+  margin: 0; }
+section.gallery.mobile .index_slider_gallery .slick-track {
+  margin-bottom: 13px; }
+
 section.index_reviews {
   font-family: "ArialMT";
   font-size: 14px;
   color: #4a3838;
   padding-bottom: 1%; }
-  @media screen and (max-width: 1024px) {
-    section.index_reviews {
-      padding-bottom: 40px; } }
   section.index_reviews .line .icon_img {
     background-color: white;
     top: -42px; }
@@ -708,23 +735,11 @@ section.index_reviews {
       top: 12%; }
   section.index_reviews .title {
     margin-top: 4%; }
-    @media screen and (max-width: 768px) {
-      section.index_reviews .title {
-        margin-top: 30px; } }
   section.index_reviews .reviews-box {
     margin-top: 4%; }
-    @media screen and (max-width: 1024px) {
-      section.index_reviews .reviews-box {
-        margin-top: 0; } }
-    @media screen and (max-width: 1024px) {
-      section.index_reviews .reviews-box .display_none_mobile {
-        display: none; } }
     section.index_reviews .reviews-box .review_relative {
       position: relative;
       width: 46%; }
-      @media screen and (max-width: 768px) {
-        section.index_reviews .reviews-box .review_relative {
-          width: 100%; } }
       section.index_reviews .reviews-box .review_relative .photo {
         position: absolute;
         width: 100px;
@@ -735,10 +750,6 @@ section.index_reviews {
       section.index_reviews .reviews-box .review_relative .photo.left {
         background: url("../images/main/reviews-left-photo.png") no-repeat center;
         left: -46px; }
-        @media screen and (max-width: 1024px) {
-          section.index_reviews .reviews-box .review_relative .photo.left {
-            position: static;
-            margin: 0 auto 15px; } }
       section.index_reviews .reviews-box .review_relative .photo.right {
         background: url("../images/main/reviews-right-photo.png") no-repeat center;
         right: -46px; }
@@ -754,19 +765,11 @@ section.index_reviews {
         content: "";
         width: 100px;
         height: 100px; }
-        @media screen and (max-width: 1024px) {
-          section.index_reviews .reviews-box .border_inside::before, section.index_reviews .reviews-box .border_inside::after,
-          section.index_reviews .reviews-box .border_inside .border_inside_bottom::before,
-          section.index_reviews .reviews-box .border_inside .border_inside_bottom::after {
-            display: none; } }
       section.index_reviews .reviews-box .border_inside .border_inside_bottom {
         content: "";
         width: 100%;
         height: 100%;
         border: 1px solid #e6d9ca; }
-        @media screen and (max-width: 1024px) {
-          section.index_reviews .reviews-box .border_inside .border_inside_bottom {
-            border: none; } }
         section.index_reviews .reviews-box .border_inside .border_inside_bottom::before, section.index_reviews .reviews-box .border_inside .border_inside_bottom::after {
           bottom: -40px;
           border-top: 1px solid #e6d9ca; }
@@ -788,12 +791,6 @@ section.index_reviews {
       section.index_reviews .reviews-box .border_inside .text_box {
         line-height: 1.49rem;
         padding: 100px 64px 100px 75px; }
-        @media screen and (max-width: 1024px) {
-          section.index_reviews .reviews-box .border_inside .text_box {
-            text-align: center;
-            width: 268px;
-            padding: 0;
-            margin: 0 auto; } }
         section.index_reviews .reviews-box .border_inside .text_box .line {
           height: 7px;
           border: none;
@@ -802,14 +799,6 @@ section.index_reviews {
           margin-top: 5%; }
         section.index_reviews .reviews-box .border_inside .text_box .link {
           margin-top: 3%; }
-          @media screen and (max-width: 1024px) {
-            section.index_reviews .reviews-box .border_inside .text_box .link {
-              margin-bottom: 35px;
-              -webkit-box-pack: center;
-              -ms-flex-pack: center;
-              -webkit-justify-content: center;
-              -moz-justify-content: center;
-              justify-content: center; } }
           section.index_reviews .reviews-box .border_inside .text_box .link a {
             color: #1b97c3; }
   section.index_reviews .all_reviews {
@@ -826,9 +815,6 @@ section.index_reviews {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
-    @media screen and (max-width: 1024px) {
-      section.index_reviews .all_reviews {
-        display: none; } }
     section.index_reviews .all_reviews .blue_circle {
       width: 110px;
       height: 110px;
@@ -867,6 +853,57 @@ section.index_reviews {
       left: 47.5%;
       z-index: 0;
       top: 0; }
+
+section.index_reviews.mobile {
+  padding-bottom: 40px; }
+  section.index_reviews.mobile .reviews-box {
+    margin-top: 0; }
+  @media screen and (max-width: 768px) {
+    section.index_reviews.mobile .title {
+      margin-top: 30px; } }
+  section.index_reviews.mobile .reviews-box .review_relative {
+    width: 100%; }
+    section.index_reviews.mobile .reviews-box .review_relative .photo {
+      position: static;
+      margin: 0 auto 15px; }
+  section.index_reviews.mobile .reviews-box .border_inside::before, section.index_reviews.mobile .reviews-box .border_inside::after,
+  section.index_reviews.mobile .reviews-box .border_inside .border_inside_bottom::before,
+  section.index_reviews.mobile .reviews-box .border_inside .border_inside_bottom::after {
+    display: none; }
+  section.index_reviews.mobile .reviews-box .border_inside .border_inside_bottom {
+    border: none; }
+  section.index_reviews.mobile .reviews-box .border_inside .text_box {
+    text-align: center;
+    width: 268px;
+    padding: 0;
+    margin: 0 auto; }
+  section.index_reviews.mobile .reviews-box .border_inside .link {
+    margin-bottom: 35px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  section.index_reviews.mobile .reviews-box .border_inside .link_margin_page_reviews {
+    margin: 0; }
+  section.index_reviews.mobile .slider_page_reviews_margin {
+    margin-bottom: 23px; }
+  section.index_reviews.mobile .slider_reviews_mobile__style .slick-dots li button {
+    border-radius: 50%;
+    border: 2px solid #4f3535;
+    background-color: white;
+    width: 7px;
+    height: 7px;
+    margin: 0 5px;
+    padding: 0; }
+  section.index_reviews.mobile .slider_reviews_mobile__style .slick-dots li.slick-active button {
+    background-color: #4f3535; }
+  section.index_reviews.mobile .slider_reviews_mobile__style .slick-dots li button:before {
+    display: none; }
+  section.index_reviews.mobile .slider_reviews_mobile__style .slick-dots li {
+    margin: 0; }
+  section.index_reviews.mobile .slider_reviews_mobile__style .slick-track {
+    margin-bottom: 13px; }
 
 section.houses {
   background-color: #fcf8f0;
@@ -929,12 +966,35 @@ section.houses {
       right: -40px; }
     section.houses .border_inside img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      max-width: 178px; }
   section.houses p {
     font-family: "Arial-I";
     color: #1b97c3;
     width: 50%;
     margin: 0 auto; }
+
+section.houses.mobile .index_slider_houses .item {
+  max-width: 323px; }
+  section.houses.mobile .index_slider_houses .item .border_inside {
+    margin-right: 40px;
+    margin-left: 25px; }
+section.houses.mobile .index_slider_houses .slick-dots li button {
+  border-radius: 50%;
+  border: 2px solid #4f3535;
+  background-color: white;
+  width: 7px;
+  height: 7px;
+  margin: 0 5px;
+  padding: 0; }
+section.houses.mobile .index_slider_houses .slick-dots li.slick-active button {
+  background-color: #4f3535; }
+section.houses.mobile .index_slider_houses .slick-dots li button:before {
+  display: none; }
+section.houses.mobile .index_slider_houses .slick-dots li {
+  margin: 0; }
+section.houses.mobile .index_slider_houses .slick-track {
+  margin-bottom: 13px; }
 
 .form-bg {
   background: url("../images/form-bg.jpg") no-repeat center top;
@@ -1308,7 +1368,7 @@ section.gallery.page_gallery {
 
 section.gallery .title.page_gallery {
   margin-top: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     section.gallery .title.page_gallery {
       margin-top: 40px; } }
 section.gallery .services_line {
@@ -1316,7 +1376,7 @@ section.gallery .services_line {
   margin: 0 auto 5% auto;
   border: 0.5px solid #d9d5d5;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 425px) {
     section.gallery .services_line {
       width: 63%; } }
   section.gallery .services_line::before, section.gallery .services_line::after {
@@ -1354,7 +1414,7 @@ section.gallery .gallery_content > a {
 
 .pink_line.gallery_detail_page {
   height: 90px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .pink_line.gallery_detail_page {
       display: none; } }
   .pink_line.gallery_detail_page .semicircle {
@@ -1408,7 +1468,7 @@ section.gallery .gallery_content > a {
 section.fishing .title {
   padding-top: 1%;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     section.fishing .title {
       padding-top: 30px; } }
 section.fishing .services_line {
@@ -1416,7 +1476,7 @@ section.fishing .services_line {
   margin: 0 auto 4% auto;
   border: 0.5px solid #d9d5d5;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 425px) {
     section.fishing .services_line {
       width: 64%; } }
   section.fishing .services_line::before, section.fishing .services_line::after {
@@ -1702,7 +1762,7 @@ section.houses .houses_line {
 .pink_line .semicircle.page_houses_detail {
   left: 44%; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   section.houses_detail .title {
     text-transform: lowercase;
     margin-top: 30px; } }
@@ -1723,9 +1783,12 @@ section.houses_detail .services_line {
     left: -5px; }
   section.houses_detail .services_line::after {
     right: -5px; }
+  @media screen and (max-width: 1024px) {
+    section.houses_detail .services_line {
+      width: 32%; } }
   @media screen and (max-width: 768px) {
     section.houses_detail .services_line {
-      width: 80%; } }
+      width: 39%; } }
 section.houses_detail .line {
   margin: 3% auto;
   border: none;
@@ -1890,7 +1953,8 @@ section.houses_detail .slider_houses_detail {
       section.houses_detail .slider_houses_detail .houses-detail-slider-for .image {
         border-radius: inherit;
         height: 318px;
-        width: 308px; }
+        width: 308px;
+        margin: 0 auto; }
       section.houses_detail .slider_houses_detail .border_inside {
         background-color: inherit;
         overflow: visible;
@@ -2017,31 +2081,6 @@ section.houses.margin_index {
     section.houses.margin_index {
       margin-top: 40px; } }
 
-.mobile_circle {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  margin: 0 auto; }
-  @media screen and (min-width: 1025px) {
-    .mobile_circle {
-      display: none; } }
-  .mobile_circle .circle {
-    border-radius: 50%;
-    border: 2px solid #4f3535;
-    background-color: white;
-    width: 7px;
-    height: 7px;
-    margin: 0 5px; }
-    .mobile_circle .circle:active, .mobile_circle .circle:hover {
-      background-color: #4f3535; }
-
 .pink_line .semicircle.page_price {
   left: 45%; }
 
@@ -2052,16 +2091,17 @@ section.price .line {
   border-bottom: 1px solid #e2dfdf;
   padding-bottom: 3px;
   width: 100%; }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   section.price .title {
     margin-top: 39px; } }
 section.price .table {
   width: 89%;
   margin: 7% 0 10% 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     section.price .table {
       width: 100%;
-      margin: 0; } }
+      margin: 0;
+      padding: 10px; } }
   section.price .table .flex__between {
     line-height: 2rem;
     margin: 1.25% 0; }
@@ -2108,6 +2148,25 @@ section.price .services_line {
 section.price .price_circle__padding {
   padding: 60px 0 50px 0; }
 
+section.price .slider_mobile_page_price.mobile .slick-list {
+  margin: 0 0 60px 0; }
+section.price .slider_mobile_page_price.mobile .slick-dots li button {
+  border-radius: 50%;
+  border: 2px solid #4f3535;
+  background-color: white;
+  width: 7px;
+  height: 7px;
+  margin: 0 5px;
+  padding: 0; }
+section.price .slider_mobile_page_price.mobile .slick-dots li.slick-active button {
+  background-color: #4f3535; }
+section.price .slider_mobile_page_price.mobile .slick-dots li button:before {
+  display: none; }
+section.price .slider_mobile_page_price.mobile .slick-dots li {
+  margin: 0; }
+section.price .slider_mobile_page_price.mobile .slick-track {
+  margin-bottom: 13px; }
+
 .pink_line .semicircle.page_program {
   left: 45%; }
 
@@ -2115,17 +2174,17 @@ section.program {
   text-align: center; }
   section.program .title {
     padding-top: 1%; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       section.program .title {
-        padding-top: 40px; } }
+        padding-top: 30px; } }
   section.program .services_line {
     width: 27%;
     margin: 0 auto 4% auto;
     border: 0.5px solid #d9d5d5;
     position: relative; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 425px) {
       section.program .services_line {
-        display: none; } }
+        width: 66%; } }
     section.program .services_line::before, section.program .services_line::after {
       content: "";
       position: absolute;
@@ -2181,6 +2240,10 @@ section.program {
 .pink_line .semicircle.page_reviews {
   left: 44%; }
 
+@media screen and (max-width: 1024px) {
+  .pink_line.page_reviews_height {
+    height: 100px; } }
+
 section.index_reviews.page_reviews .title {
   margin-top: 0; }
   @media screen and (max-width: 768px) {
@@ -2233,7 +2296,7 @@ section.services {
     padding-top: 1%;
     position: relative;
     left: -6%; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       section.services .title {
         padding-top: 30px;
         left: 0; } }
@@ -2243,11 +2306,13 @@ section.services {
     border: 0.5px solid #d9d5d5;
     position: relative;
     left: -6%; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       section.services .services_line {
-        width: 80%;
         left: 0;
         margin-bottom: 40px; } }
+    @media screen and (max-width: 425px) {
+      section.services .services_line {
+        width: 42%; } }
     section.services .services_line::before, section.services .services_line::after {
       content: "";
       position: absolute;
@@ -2307,5 +2372,11 @@ section.services {
         margin-bottom: 40px; }
         section.services .flex__wrap > div {
           margin: 0 auto 4%; } }
+    @media screen and (max-width: 1024px) {
+      section.services .flex__wrap {
+        padding: 0 65px; } }
+    @media screen and (max-width: 768px) {
+      section.services .flex__wrap {
+        padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */

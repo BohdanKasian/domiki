@@ -3,8 +3,6 @@ section.index_reviews
   font-size: 14px
   color: #4a3838
   padding-bottom: 1%
-  @media screen and (max-width: 1024px)
-    padding-bottom: 40px
   .line
     .icon_img
       background-color: white
@@ -18,20 +16,11 @@ section.index_reviews
         top: 12%
   .title
     margin-top: 4%
-    @media screen and (max-width: 768px)
-      margin-top: 30px
   .reviews-box
     margin-top: 4%
-    @media screen and (max-width: 1024px)
-      margin-top: 0
-    .display_none_mobile
-      @media screen and (max-width: 1024px)
-        display: none
     .review_relative
       position: relative
       width: 46%
-      @media screen and (max-width: 768px)
-        width: 100%
       .photo
         position: absolute
         width: 100px
@@ -42,9 +31,6 @@ section.index_reviews
       .photo.left
         background: url("../images/main/reviews-left-photo.png") no-repeat center
         left: -46px
-        @media screen and (max-width: 1024px)
-          position: static
-          margin: 0 auto 15px
       .photo.right
         background: url("../images/main/reviews-right-photo.png") no-repeat center
         right: -46px
@@ -61,15 +47,11 @@ section.index_reviews
         content: ""
         width: 100px
         height: 100px
-        @media screen and (max-width: 1024px)
-          display: none
       .border_inside_bottom
         content: ""
         width: 100%
         height: 100%
         border: 1px solid #e6d9ca
-        @media screen and (max-width: 1024px)
-          border: none
         &::before,
         &::after
           bottom: -40px
@@ -93,11 +75,6 @@ section.index_reviews
       .text_box
         line-height: 1.49rem
         padding: 100px 64px 100px 75px
-        @media screen and (max-width: 1024px)
-          text-align: center
-          width: 268px
-          padding: 0
-          margin: 0 auto
         .line
           height: 7px
           border: none
@@ -106,9 +83,6 @@ section.index_reviews
           margin-top: 5%
         .link
           margin-top: 3%
-          @media screen and (max-width: 1024px)
-            margin-bottom: 35px
-            @include justify-content(center)
           a
             color: #1b97c3
   .all_reviews
@@ -117,8 +91,6 @@ section.index_reviews
     left: -25px
     @include flexbox
     @include justify-content(center)
-    @media screen and (max-width: 1024px)
-      display: none
     .blue_circle
       width: 110px
       height: 110px
@@ -145,3 +117,57 @@ section.index_reviews
       left: 47.5%
       z-index: 0
       top: 0
+
+section.index_reviews.mobile
+  padding-bottom: 40px
+  .reviews-box
+    margin-top: 0
+  .title
+    @media screen and (max-width: 768px)
+      margin-top: 30px
+  .reviews-box
+      margin-top: 0
+    .review_relative
+      width: 100%
+      .photo
+        position: static
+        margin: 0 auto 15px
+    .border_inside
+      &::before,
+      &::after,
+      .border_inside_bottom::before,
+      .border_inside_bottom::after
+        display: none
+      .border_inside_bottom
+        border: none
+      .text_box
+        text-align: center
+        width: 268px
+        padding: 0
+        margin: 0 auto
+      .link
+        margin-bottom: 35px
+        @include justify-content(center)
+      .link_margin_page_reviews
+        margin: 0
+  .slider_page_reviews_margin
+    margin-bottom: 23px
+  .slider_reviews_mobile__style
+    .slick-dots li button
+      border-radius: 50%
+      border: 2px solid #4f3535
+      background-color: white
+      width: 7px
+      height: 7px
+      margin: 0 5px
+      padding: 0
+    .slick-dots li.slick-active
+      button
+        background-color: #4f3535
+    .slick-dots li button:before
+      display: none
+    .slick-dots
+      li
+        margin: 0
+    .slick-track
+      margin-bottom: 13px

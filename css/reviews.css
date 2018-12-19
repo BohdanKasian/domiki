@@ -1,6 +1,10 @@
 .pink_line .semicircle.page_reviews {
   left: 44%; }
 
+@media screen and (max-width: 1024px) {
+  .pink_line.page_reviews_height {
+    height: 100px; } }
+
 section.index_reviews.page_reviews .title {
   margin-top: 0; }
   @media screen and (max-width: 768px) {

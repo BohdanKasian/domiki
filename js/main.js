@@ -8,6 +8,26 @@ $('.mane-page-slider').slick({
     variableWidth: true,
 });
 
+//main page slider_houses
+$('.index_slider_houses').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    arrows: false,
+    variableWidth: true,
+});
+
+//main page slider_gallery
+$('.index_slider_gallery').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    arrows: false,
+    variableWidth: true,
+});
+
 //galleryDetail slider
 $('.gallery-detail-slider-for').slick({
     slidesToShow: 1,
@@ -33,7 +53,7 @@ $('.houses-detail-slider-for').slick({
     arrows: false,
     fade: true,
     asNavFor: '.houses-detail-slider-nav',
-    dots: false
+    dots: false,
 });
 $('.houses-detail-slider-nav').slick({
     slidesToShow: 4,
@@ -55,6 +75,16 @@ $('.slider_houses').slick({
     arrows: false,
 });
 
+// slider_reviews_mobile
+$('.slick-reviews-js').slick({
+    dots: true,
+});
+
+
+// slider_mobile_page_price
+$('.slider_mobile_page_price').slick({
+    dots: true,
+});
 //reviews pege FadeIn
 $("#show-js").click(function () {
     $("#showMore-js").toggleClass ("dd__none");

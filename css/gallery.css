@@ -6,7 +6,7 @@ section.gallery.page_gallery {
 
 section.gallery .title.page_gallery {
   margin-top: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     section.gallery .title.page_gallery {
       margin-top: 40px; } }
 section.gallery .services_line {
@@ -14,7 +14,7 @@ section.gallery .services_line {
   margin: 0 auto 5% auto;
   border: 0.5px solid #d9d5d5;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 425px) {
     section.gallery .services_line {
       width: 63%; } }
   section.gallery .services_line::before, section.gallery .services_line::after {

@@ -62,8 +62,37 @@ section.houses
     img
       width: 100%
       height: auto
+      max-width: 178px
   p
     font-family: "Arial-I"
     color: #1b97c3
     width: 50%
     margin: 0 auto
+
+
+section.houses.mobile
+  .index_slider_houses
+    .item
+      max-width: 323px
+      .border_inside
+        margin-right: 40px
+        margin-left: 25px
+    .slick-dots li button
+      border-radius: 50%
+      border: 2px solid #4f3535
+      background-color: white
+      width: 7px
+      height: 7px
+      margin: 0 5px
+      padding: 0
+    .slick-dots li.slick-active
+      button
+        background-color: #4f3535
+    .slick-dots li button:before
+      display: none
+    .slick-dots
+      li
+        margin: 0
+    .slick-track
+      margin-bottom: 13px
+

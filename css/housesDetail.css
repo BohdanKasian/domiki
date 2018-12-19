@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'flexbox'.
-        on line 38 of housesDetail.sass, in `flexbox'
-        from line 38 of housesDetail.sass
+        on line 40 of housesDetail.sass, in `flexbox'
+        from line 40 of housesDetail.sass
 
-33:     border-top: 1px solid #c8c3c3
-34:     border-bottom: 1px solid #c8c3c3
-35:     padding-bottom: 2px
-36:     width: 100%
-37:   .list
-38:     @include flexbox
-39:     @include justify-content(center)
-40:     font-size: 13px
-41:     font-family: "ArialMT"
-42:     a
-43:       color: rgba(0,0,0,0.5)
+35:     border-top: 1px solid #c8c3c3
+36:     border-bottom: 1px solid #c8c3c3
+37:     padding-bottom: 2px
+38:     width: 100%
+39:   .list
+40:     @include flexbox
+41:     @include justify-content(center)
+42:     font-size: 13px
+43:     font-family: "ArialMT"
+44:     a
+45:       color: rgba(0,0,0,0.5)
 
 Backtrace:
-housesDetail.sass:38:in `flexbox'
-housesDetail.sass:38
+housesDetail.sass:40:in `flexbox'
+housesDetail.sass:40
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
@@ -82,4 +82,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexbox'.\A         on line 38 of housesDetail.sass, in `flexbox'\A         from line 38 of housesDetail.sass\A \A 33:     border-top: 1px solid #c8c3c3\A 34:     border-bottom: 1px solid #c8c3c3\A 35:     padding-bottom: 2px\A 36:     width: 100%\A 37:   .list\A 38:     @include flexbox\A 39:     @include justify-content(center)\A 40:     font-size: 13px\A 41:     font-family: \"ArialMT\"\A 42:     a\A 43:       color: rgba(0,0,0,0.5)"; }
+  content: "Error: Undefined mixin 'flexbox'.\A         on line 40 of housesDetail.sass, in `flexbox'\A         from line 40 of housesDetail.sass\A \A 35:     border-top: 1px solid #c8c3c3\A 36:     border-bottom: 1px solid #c8c3c3\A 37:     padding-bottom: 2px\A 38:     width: 100%\A 39:   .list\A 40:     @include flexbox\A 41:     @include justify-content(center)\A 42:     font-size: 13px\A 43:     font-family: \"ArialMT\"\A 44:     a\A 45:       color: rgba(0,0,0,0.5)"; }

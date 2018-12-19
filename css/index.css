@@ -1,74 +1,98 @@
-/*
-Error: Undefined mixin 'flexbox'.
-        on line 106 of index.sass, in `flexbox'
-        from line 106 of index.sass
+.slick-initialized .slick-slide {
+  outline: none; }
 
-101:   margin-top: 4%
-102:   @media screen and (max-width: 768px)
-103:     margin-top: 40px
-104: 
-105: .mobile_circle
-106:   @include flexbox
-107:   @include justify-content(center)
-108:   margin: 0 auto
-109:   @media screen and (min-width: 1025px)
-110:     display: none
-111:   .circle
+.mane-page-slider {
+  height: 100vh; }
+  .mane-page-slider .item {
+    height: 100vh;
+    width: 100vw; }
+    .mane-page-slider .item img {
+      width: 100%;
+      height: 100%; }
 
-Backtrace:
-index.sass:106:in `flexbox'
-index.sass:106
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/bin/sass:13:in `<top (required)>'
-C:/Ruby24-x64/bin/sass:23:in `load'
-C:/Ruby24-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'flexbox'.\A         on line 106 of index.sass, in `flexbox'\A         from line 106 of index.sass\A \A 101:   margin-top: 4%\A 102:   @media screen and (max-width: 768px)\A 103:     margin-top: 40px\A 104: \A 105: .mobile_circle\A 106:   @include flexbox\A 107:   @include justify-content(center)\A 108:   margin: 0 auto\A 109:   @media screen and (min-width: 1025px)\A 110:     display: none\A 111:   .circle"; }
+.offer {
+  color: #352b2b; }
+  .offer .line .icon_img::before {
+    background: url("../images/main/icon-offer.png") no-repeat center; }
+  .offer h2 {
+    font-family: "ArialMT";
+    font-size: 14px;
+    margin-top: 47px;
+    line-height: 2rem;
+    font-weight: 400; }
+    @media screen and (max-width: 320px) {
+      .offer h2 {
+        text-align: center; } }
+  .offer .offer_content {
+    padding: 48px 2% 0 0; }
+    .offer .offer_content > a {
+      margin-right: 3%; }
+    .offer .offer_content .content {
+      text-align: center;
+      font-size: 18px;
+      color: #4a3838;
+      height: 272px; }
+      .offer .offer_content .content div:first-child {
+        border-radius: 50%;
+        width: 211px;
+        height: 211px; }
+      .offer .offer_content .content .houses_img {
+        background: url("../images/main/houses-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .fishing_img {
+        background: url("../images/main/fishing-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .bathhouse_img {
+        background: url("../images/main/bathhouse-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .waterfalls_img {
+        background: url("../images/main/waterfalls-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .shooting_img {
+        background: url("../images/main/shooting-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .excursions_img {
+        background: url("../images/main/excursions-bg.jpg") no-repeat center;
+        background-size: cover; }
+      .offer .offer_content .content .icon {
+        border-radius: 50%;
+        background-color: #fcf8f0;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        left: 6%;
+        bottom: 25%; }
+        .offer .offer_content .content .icon::before {
+          content: "";
+          position: absolute;
+          background-size: contain;
+          width: 70%;
+          height: 70%;
+          left: 13%;
+          bottom: 15%; }
+      .offer .offer_content .content .icon.houses::before {
+        background: url("../images/main/houses-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.fishing::before {
+        background: url("../images/main/fishing-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.bathhouse::before {
+        background: url("../images/main/bathhouse-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.waterfalls::before {
+        background: url("../images/main/waterfalls-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.shooting::before {
+        background: url("../images/main/shooting-icon.png") no-repeat center; }
+      .offer .offer_content .content .icon.excursions::before {
+        background: url("../images/main/excursions-icon.png") no-repeat center; }
+      .offer .offer_content .content p {
+        position: relative;
+        bottom: 25%; }
+      .offer .offer_content .content .excursions_text__width {
+        width: 50%;
+        margin: 0 auto; }
+
+section.houses.margin_index {
+  margin-top: 4%; }
+  @media screen and (max-width: 768px) {
+    section.houses.margin_index {
+      margin-top: 40px; } }
+
+/*# sourceMappingURL=index.css.map */
