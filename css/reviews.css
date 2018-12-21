@@ -7,7 +7,7 @@
 
 section.index_reviews.page_reviews .title {
   margin-top: 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     section.index_reviews.page_reviews .title {
       margin-top: 30px; } }
 section.index_reviews.page_reviews .services_line {
@@ -44,6 +44,13 @@ section.index_reviews.page_reviews .all_reviews {
       cursor: pointer; }
     section.index_reviews.page_reviews .all_reviews .all_reviews__link .orange_circle {
       left: 46%; }
+
+@media screen and (max-width: 1024px) {
+  .pink_line.page_reviews_mobile {
+    height: 100px; } }
+
+section.index_reviews.page_reviews.mobile .line {
+  margin-top: 13px; }
 
 .dd__none {
   display: none; }

@@ -8,7 +8,7 @@
 section.index_reviews.page_reviews
   .title
     margin-top: 0
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1024px)
       margin-top: 30px
   .services_line
     margin: 0 auto 8% auto
@@ -44,6 +44,14 @@ section.index_reviews.page_reviews
         cursor: pointer
       .orange_circle
         left: 46%
+
+.pink_line.page_reviews_mobile
+  @media screen and (max-width: 1024px)
+    height: 100px
+
+section.index_reviews.page_reviews.mobile
+  .line
+    margin-top: 13px
 
 .dd__none
   display: none

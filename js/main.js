@@ -13,7 +13,7 @@ $('.index_slider_houses').slick({
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 1,
     arrows: false,
     variableWidth: true,
 });
@@ -23,7 +23,7 @@ $('.index_slider_gallery').slick({
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 1,
     arrows: false,
     variableWidth: true,
 });
@@ -78,6 +78,7 @@ $('.slider_houses').slick({
 // slider_reviews_mobile
 $('.slick-reviews-js').slick({
     dots: true,
+    arrows: false,
 });
 
 
