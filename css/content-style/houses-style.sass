@@ -68,15 +68,44 @@ section.houses
     color: #1b97c3
     width: 50%
     margin: 0 auto
+    @media screen and (max-width: 425px)
+      margin: 0 34%
+    @media screen and (max-width: 375px)
+      margin: 0 auto
 
 
 section.houses.mobile
   .index_slider_houses
+    .border_inside
+      margin: 0 auto 10%
+      width: 260px
     .item
+      width: 323px
+      @media screen and (max-width: 768px)
+        width: 372px
+    .mx-width
       max-width: 323px
+      margin: 0 auto
+      @media screen and (max-width: 768px)
+        max-width: 360px
+      @media screen and (max-width: 425px)
+        max-width: 323px
+        margin: 0 60px
+      @media screen and (max-width: 375px)
+        margin: 0 40px
       .border_inside
         margin-right: 40px
         margin-left: 25px
+        @media screen and (max-width: 768px)
+          margin-left: 60px
+          margin-right: 45px
+        @media screen and (max-width: 425px)
+          margin-left: 80px
+          margin-right: 29px
+        @media screen and (max-width: 375px)
+          margin-left: 62px
+        @media screen and (max-width: 425px)
+          margin-left: 20px
     .slick-dots li button
       border-radius: 50%
       border: 2px solid #4f3535

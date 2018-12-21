@@ -66,12 +66,51 @@ section.houses {
     color: #1b97c3;
     width: 50%;
     margin: 0 auto; }
+    @media screen and (max-width: 425px) {
+      section.houses p {
+        margin: 0 34%; } }
+    @media screen and (max-width: 375px) {
+      section.houses p {
+        margin: 0 auto; } }
 
+section.houses.mobile .index_slider_houses .border_inside {
+  margin: 0 auto 10%;
+  width: 260px; }
 section.houses.mobile .index_slider_houses .item {
-  max-width: 323px; }
-  section.houses.mobile .index_slider_houses .item .border_inside {
+  width: 323px; }
+  @media screen and (max-width: 768px) {
+    section.houses.mobile .index_slider_houses .item {
+      width: 372px; } }
+section.houses.mobile .index_slider_houses .mx-width {
+  max-width: 323px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    section.houses.mobile .index_slider_houses .mx-width {
+      max-width: 360px; } }
+  @media screen and (max-width: 425px) {
+    section.houses.mobile .index_slider_houses .mx-width {
+      max-width: 323px;
+      margin: 0 60px; } }
+  @media screen and (max-width: 375px) {
+    section.houses.mobile .index_slider_houses .mx-width {
+      margin: 0 40px; } }
+  section.houses.mobile .index_slider_houses .mx-width .border_inside {
     margin-right: 40px;
     margin-left: 25px; }
+    @media screen and (max-width: 768px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 60px;
+        margin-right: 45px; } }
+    @media screen and (max-width: 425px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 80px;
+        margin-right: 29px; } }
+    @media screen and (max-width: 375px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 62px; } }
+    @media screen and (max-width: 425px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 20px; } }
 section.houses.mobile .index_slider_houses .slick-dots li button {
   border-radius: 50%;
   border: 2px solid #4f3535;

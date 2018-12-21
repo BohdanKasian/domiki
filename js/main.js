@@ -11,21 +11,39 @@ $('.mane-page-slider').slick({
 //main page slider_houses
 $('.index_slider_houses').slick({
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    arrows: false,
+    slidesToScroll: 1,
     variableWidth: true,
+    responsive: [
+        {
+            breakpoint: 425,
+            settings: {
+                centerMode: true,
+                slidesToScroll: 1,
+            }
+        }]
 });
 
 //main page slider_gallery
 $('.index_slider_gallery').slick({
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    arrows: false,
+    slidesToScroll: 1,
     variableWidth: true,
+    responsive: [
+        {
+            breakpoint: 425,
+            settings: {
+                centerMode: true,
+                slidesToScroll: 1,
+            }
+        }]
 });
 
 //galleryDetail slider

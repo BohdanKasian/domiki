@@ -323,7 +323,7 @@ a:hover {
     .wrapper {
       margin: 0 auto;
       width: 100%;
-      padding: 0 5px; } }
+      padding: 0 10px; } }
 
 .pink_line {
   position: relative;
@@ -351,6 +351,9 @@ a:hover {
     width: 105px;
     height: 105px;
     background-color: white; }
+    @media screen and (max-width: 425px) {
+      .line .icon_img {
+        left: 39%; } }
     @media screen and (max-width: 320px) {
       .line .icon_img {
         left: 34.5%; } }
@@ -469,6 +472,12 @@ header .logo_mobile_pos {
   margin-left: 42.5vw;
   margin-top: 32vh;
   z-index: 1; }
+  @media screen and (max-width: 425px) {
+    header .logo_mobile_pos {
+      margin-left: 39.5vw; } }
+  @media screen and (max-width: 375px) {
+    header .logo_mobile_pos {
+      margin-left: 35.5vw; } }
   @media screen and (max-width: 320px) {
     header .logo_mobile_pos {
       margin-left: 31.5vw; } }
@@ -701,6 +710,16 @@ section.gallery.mobile .index_slider_gallery .item {
   section.gallery.mobile .index_slider_gallery .item .bg-img {
     margin-right: 40px;
     margin-left: 25px; }
+    @media screen and (max-width: 768px) {
+      section.gallery.mobile .index_slider_gallery .item .bg-img {
+        margin-right: 35px; } }
+    @media screen and (max-width: 425px) {
+      section.gallery.mobile .index_slider_gallery .item .bg-img {
+        margin-right: 40px;
+        margin-left: 40px; } }
+  @media screen and (max-width: 425px) {
+    section.gallery.mobile .index_slider_gallery .item .mr-gallery-index {
+      margin: 0 50px; } }
 section.gallery.mobile .index_slider_gallery .slick-dots li button {
   border-radius: 50%;
   border: 2px solid #4f3535;
@@ -973,12 +992,51 @@ section.houses {
     color: #1b97c3;
     width: 50%;
     margin: 0 auto; }
+    @media screen and (max-width: 425px) {
+      section.houses p {
+        margin: 0 34%; } }
+    @media screen and (max-width: 375px) {
+      section.houses p {
+        margin: 0 auto; } }
 
+section.houses.mobile .index_slider_houses .border_inside {
+  margin: 0 auto 10%;
+  width: 260px; }
 section.houses.mobile .index_slider_houses .item {
-  max-width: 323px; }
-  section.houses.mobile .index_slider_houses .item .border_inside {
+  width: 323px; }
+  @media screen and (max-width: 768px) {
+    section.houses.mobile .index_slider_houses .item {
+      width: 372px; } }
+section.houses.mobile .index_slider_houses .mx-width {
+  max-width: 323px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    section.houses.mobile .index_slider_houses .mx-width {
+      max-width: 360px; } }
+  @media screen and (max-width: 425px) {
+    section.houses.mobile .index_slider_houses .mx-width {
+      max-width: 323px;
+      margin: 0 60px; } }
+  @media screen and (max-width: 375px) {
+    section.houses.mobile .index_slider_houses .mx-width {
+      margin: 0 40px; } }
+  section.houses.mobile .index_slider_houses .mx-width .border_inside {
     margin-right: 40px;
     margin-left: 25px; }
+    @media screen and (max-width: 768px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 60px;
+        margin-right: 45px; } }
+    @media screen and (max-width: 425px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 80px;
+        margin-right: 29px; } }
+    @media screen and (max-width: 375px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 62px; } }
+    @media screen and (max-width: 425px) {
+      section.houses.mobile .index_slider_houses .mx-width .border_inside {
+        margin-left: 20px; } }
 section.houses.mobile .index_slider_houses .slick-dots li button {
   border-radius: 50%;
   border: 2px solid #4f3535;
@@ -1410,8 +1468,8 @@ section.gallery .gallery_content > a {
     height: 250px; } }
 @media screen and (max-width: 768px) {
   section.gallery .gallery_content .bg-img {
-    width: 200px;
-    height: 200px; } }
+    width: 192px;
+    height: 192px; } }
 
 .pink_line.gallery_detail_page {
   height: 90px; }
