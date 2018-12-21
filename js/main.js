@@ -85,6 +85,7 @@ $('.slick-reviews-js').slick({
 // slider_mobile_page_price
 $('.slider_mobile_page_price').slick({
     dots: true,
+    arrows: false,
 });
 //reviews pege FadeIn
 $("#show-js").click(function () {
