@@ -1200,7 +1200,8 @@ footer {
             -moz-flex-direction: row;
             -ms-flex-direction: row;
             flex-direction: row;
-            margin: 0; }
+            margin: 0;
+            width: 200px; }
             footer .footer_content .footer_link .mobile_style a {
               margin-right: 87px; } }
       footer .footer_content .footer_link .flex__column {
