@@ -476,15 +476,18 @@ header .logo_mobile_pos {
   margin-left: 42.5vw;
   margin-top: 32vh;
   z-index: 1; }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 660px) {
     header .logo_mobile_pos {
-      margin-left: 39.5vw; } }
-  @media screen and (max-width: 375px) {
-    header .logo_mobile_pos {
-      margin-left: 35.5vw; } }
-  @media screen and (max-width: 320px) {
-    header .logo_mobile_pos {
-      margin-left: 31.5vw; } }
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      margin-top: 6vh; } }
+  @media screen and (max-width: 660px) {
+    header .logo_mobile_pos .logo_bg.mobile {
+      padding: 5% 0;
+      width: 90px;
+      height: 90px; } }
   @media screen and (min-width: 1025px) {
     header .logo_mobile_pos .logo_bg.mobile {
       display: none; } }
@@ -984,12 +987,6 @@ section.houses {
     color: #1b97c3;
     width: 50%;
     margin: 0 auto; }
-    @media screen and (max-width: 425px) {
-      section.houses p {
-        margin: 0 34%; } }
-    @media screen and (max-width: 375px) {
-      section.houses p {
-        margin: 0 auto; } }
 
 section.houses.mobile .index_slider_houses .border_inside {
   margin: 0 auto 10%;
@@ -998,37 +995,30 @@ section.houses.mobile .index_slider_houses .item {
   width: 323px; }
   @media screen and (max-width: 768px) {
     section.houses.mobile .index_slider_houses .item {
+      width: 768px; } }
+  @media screen and (max-width: 425px) {
+    section.houses.mobile .index_slider_houses .item {
       width: 372px; } }
 section.houses.mobile .index_slider_houses .mx-width {
   max-width: 323px;
   margin: 0 auto; }
   @media screen and (max-width: 768px) {
     section.houses.mobile .index_slider_houses .mx-width {
-      max-width: 360px; } }
+      max-width: none;
+      width: 768px; } }
   @media screen and (max-width: 425px) {
     section.houses.mobile .index_slider_houses .mx-width {
-      max-width: 323px;
-      margin: 0 60px; } }
+      width: 425px; } }
   @media screen and (max-width: 375px) {
     section.houses.mobile .index_slider_houses .mx-width {
-      margin: 0 40px; } }
+      width: 375px; } }
   section.houses.mobile .index_slider_houses .mx-width .border_inside {
     margin-right: 40px;
     margin-left: 25px; }
     @media screen and (max-width: 768px) {
       section.houses.mobile .index_slider_houses .mx-width .border_inside {
-        margin-left: 60px;
-        margin-right: 45px; } }
-    @media screen and (max-width: 425px) {
-      section.houses.mobile .index_slider_houses .mx-width .border_inside {
-        margin-left: 80px;
-        margin-right: 29px; } }
-    @media screen and (max-width: 375px) {
-      section.houses.mobile .index_slider_houses .mx-width .border_inside {
-        margin-left: 62px; } }
-    @media screen and (max-width: 425px) {
-      section.houses.mobile .index_slider_houses .mx-width .border_inside {
-        margin-left: 20px; } }
+        margin-left: auto;
+        margin-right: auto; } }
 section.houses.mobile .index_slider_houses .slick-dots li button {
   border-radius: 50%;
   border: 2px solid #4f3535;
@@ -1751,12 +1741,18 @@ section.fishing .border_inside {
 .slider_houses {
   height: 100vh;
   width: 100%; }
+  @media screen and (max-width: 660px) {
+    .slider_houses {
+      height: auto; } }
   .slider_houses .item {
     height: 100vh;
     width: 70vw; }
     @media screen and (max-width: 1024px) {
       .slider_houses .item {
         width: 100vw; } }
+    @media screen and (max-width: 660px) {
+      .slider_houses .item {
+        height: auto; } }
     .slider_houses .item img {
       width: 100%;
       height: 100%; }
@@ -1770,6 +1766,9 @@ section.fishing .border_inside {
     outline: none; }
   .slider_houses .slick-list {
     height: 100vh; }
+    @media screen and (max-width: 660px) {
+      .slider_houses .slick-list {
+        height: auto; } }
   .slider_houses .slick-dots {
     bottom: 1%;
     right: 17%;
@@ -1809,9 +1808,7 @@ section.houses .houses_line {
 @media screen and (max-width: 768px) {
   section.houses.page_houses p {
     margin-bottom: 40px;
-    width: 100%; }
-  section.houses.page_houses .icon_img {
-    left: 37%; } }
+    width: 100%; } }
 
 .pink_line .semicircle.page_houses_detail {
   left: 44%; }
@@ -2043,15 +2040,18 @@ section.houses_detail .slider_houses_detail {
 
 .mane-page-slider {
   height: 100vh; }
+  @media screen and (max-width: 660px) {
+    .mane-page-slider {
+      height: auto; } }
   .mane-page-slider .item {
     height: 100vh;
     width: 100vw; }
+    @media screen and (max-width: 660px) {
+      .mane-page-slider .item {
+        height: auto; } }
     .mane-page-slider .item img {
       width: 100%;
       height: 100%; }
-      @media screen and (max-width: 660px) {
-        .mane-page-slider .item img {
-          height: auto; } }
 
 .offer {
   color: #352b2b; }

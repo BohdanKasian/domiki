@@ -3,15 +3,18 @@
 
 .mane-page-slider {
   height: 100vh; }
+  @media screen and (max-width: 660px) {
+    .mane-page-slider {
+      height: auto; } }
   .mane-page-slider .item {
     height: 100vh;
     width: 100vw; }
+    @media screen and (max-width: 660px) {
+      .mane-page-slider .item {
+        height: auto; } }
     .mane-page-slider .item img {
       width: 100%;
       height: 100%; }
-      @media screen and (max-width: 660px) {
-        .mane-page-slider .item img {
-          height: auto; } }
 
 .offer {
   color: #352b2b; }

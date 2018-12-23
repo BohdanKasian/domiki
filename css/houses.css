@@ -1,12 +1,18 @@
 .slider_houses {
   height: 100vh;
   width: 100%; }
+  @media screen and (max-width: 660px) {
+    .slider_houses {
+      height: auto; } }
   .slider_houses .item {
     height: 100vh;
     width: 70vw; }
     @media screen and (max-width: 1024px) {
       .slider_houses .item {
         width: 100vw; } }
+    @media screen and (max-width: 660px) {
+      .slider_houses .item {
+        height: auto; } }
     .slider_houses .item img {
       width: 100%;
       height: 100%; }
@@ -20,6 +26,9 @@
     outline: none; }
   .slider_houses .slick-list {
     height: 100vh; }
+    @media screen and (max-width: 660px) {
+      .slider_houses .slick-list {
+        height: auto; } }
   .slider_houses .slick-dots {
     bottom: 1%;
     right: 17%;
@@ -59,8 +68,6 @@ section.houses .houses_line {
 @media screen and (max-width: 768px) {
   section.houses.page_houses p {
     margin-bottom: 40px;
-    width: 100%; }
-  section.houses.page_houses .icon_img {
-    left: 37%; } }
+    width: 100%; } }
 
 /*# sourceMappingURL=houses.css.map */

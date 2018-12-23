@@ -24,13 +24,17 @@ header
     margin-left: 42.5vw
     margin-top: 32vh
     z-index: 1
-    @media screen and (max-width: 425px)
-      margin-left: 39.5vw
-    @media screen and (max-width: 375px)
-      margin-left: 35.5vw
-    @media screen and (max-width: 320px)
-      margin-left: 31.5vw
+    @media screen and (max-width: 660px)
+      margin-left: auto
+      margin-right: auto
+      left: 0
+      right: 0
+      margin-top: 6vh
     .logo_bg.mobile
+      @media screen and (max-width: 660px)
+        padding: 5% 0
+        width: 90px
+        height: 90px
       @media screen and (min-width: 1025px)
         display: none
   .menu
@@ -52,7 +56,6 @@ header
       height: auto
       padding: 0
       @include flex-direction(column-reverse)
-
     .menu_dd
       @media screen and (max-width: 1024px)
         display: none
