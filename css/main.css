@@ -353,10 +353,14 @@ a:hover {
     background-color: white; }
     @media screen and (max-width: 425px) {
       .line .icon_img {
-        left: 39%; } }
+        left: 0;
+        right: 0;
+        margin: 0 auto; } }
     @media screen and (max-width: 320px) {
       .line .icon_img {
-        left: 34.5%; } }
+        left: 0;
+        right: 0;
+        margin: 0 auto; } }
     .line .icon_img::before {
       content: "";
       width: 90%;
@@ -500,7 +504,9 @@ header .menu {
   z-index: 10; }
   @media screen and (max-width: 1024px) {
     header .menu {
-      margin: 0 34vw;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       position: fixed;
       width: 319px;
       height: auto;
@@ -511,23 +517,9 @@ header .menu {
       -moz-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
       flex-direction: column-reverse; } }
-  @media screen and (max-width: 768px) {
-    header .menu {
-      margin: 0 29vw; } }
-  @media screen and (max-width: 425px) {
-    header .menu {
-      margin: 0 13vw; } }
-  @media screen and (max-width: 375px) {
-    header .menu {
-      margin: 0 8vw; } }
-  @media screen and (max-width: 320px) {
-    header .menu {
-      margin: 0; } }
   @media screen and (max-width: 1024px) {
     header .menu .menu_dd {
       display: none; } }
-  header .menu .height_menu_mobile {
-    height: 75vh; }
   @media screen and (max-width: 1024px) {
     header .menu .logo_bg {
       display: none; } }
@@ -716,7 +708,7 @@ section.gallery.mobile .index_slider_gallery .item {
     @media screen and (max-width: 425px) {
       section.gallery.mobile .index_slider_gallery .item .bg-img {
         margin-right: 40px;
-        margin-left: 40px; } }
+        margin-left: 55px; } }
   @media screen and (max-width: 425px) {
     section.gallery.mobile .index_slider_gallery .item .mr-gallery-index {
       margin: 0 50px; } }
@@ -1771,6 +1763,9 @@ section.fishing .border_inside {
       @media screen and (min-width: 300px) {
         .slider_houses .item img {
           width: 100vw; } }
+      @media screen and (max-width: 660px) {
+        .slider_houses .item img {
+          height: auto; } }
   .slider_houses .slick-initialized .slick-slide {
     outline: none; }
   .slider_houses .slick-list {
@@ -2054,6 +2049,9 @@ section.houses_detail .slider_houses_detail {
     .mane-page-slider .item img {
       width: 100%;
       height: 100%; }
+      @media screen and (max-width: 660px) {
+        .mane-page-slider .item img {
+          height: auto; } }
 
 .offer {
   color: #352b2b; }

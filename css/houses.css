@@ -13,6 +13,9 @@
       @media screen and (min-width: 300px) {
         .slider_houses .item img {
           width: 100vw; } }
+      @media screen and (max-width: 660px) {
+        .slider_houses .item img {
+          height: auto; } }
   .slider_houses .slick-initialized .slick-slide {
     outline: none; }
   .slider_houses .slick-list {
