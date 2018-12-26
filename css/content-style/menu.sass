@@ -56,6 +56,12 @@ header
       height: auto
       padding: 0
       @include flex-direction(column-reverse)
+    @media screen and (max-width: 425px)
+      width: 425px
+    @media screen and (max-width: 375px)
+      width: 375px
+    @media screen and (max-width: 320px)
+      width: 319px
     .menu_dd
       @media screen and (max-width: 1024px)
         display: none
@@ -83,7 +89,7 @@ header
         transition: all 0.3s linear
       @media screen and (max-width: 1024px)
         border: none
-        padding: 2.3vh 0
+        padding: 3vh 0
         &:hover,
         &:active
           box-shadow: inset 0 0 0 100px rgba(0,0,0,0.05)
@@ -93,6 +99,7 @@ header
       @include flex-direction(row-reverse)
       @include align-items(center)
       margin: 0
+      @include justify-content(space-between)
     p
       padding-bottom: 2vh
       color: #e4b05c

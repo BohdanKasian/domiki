@@ -12,12 +12,14 @@
     .icon_img
       top: -20px
       background: url("../images/form-clock-bg.png") no-repeat
-      left: 42%
-      @media screen and (max-width: 1024px)
-        left: 31%
       &::before
         left: 3%
         background: url("../images/form-clock.png") no-repeat center
+        @media screen and (max-width: 425px)
+          width: 80%
+          height: 80%
+          left: 9%
+          top: 7%
   h2
     text-transform: uppercase
     font-size: 30px

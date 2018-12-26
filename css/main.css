@@ -346,21 +346,17 @@ a:hover {
   .line .icon_img {
     border-radius: 50%;
     position: absolute;
-    left: 43.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     top: -46px;
     width: 105px;
     height: 105px;
     background-color: white; }
     @media screen and (max-width: 425px) {
       .line .icon_img {
-        left: 0;
-        right: 0;
-        margin: 0 auto; } }
-    @media screen and (max-width: 320px) {
-      .line .icon_img {
-        left: 0;
-        right: 0;
-        margin: 0 auto; } }
+        width: 90px;
+        height: 90px; } }
     .line .icon_img::before {
       content: "";
       width: 90%;
@@ -520,6 +516,15 @@ header .menu {
       -moz-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
       flex-direction: column-reverse; } }
+  @media screen and (max-width: 425px) {
+    header .menu {
+      width: 425px; } }
+  @media screen and (max-width: 375px) {
+    header .menu {
+      width: 375px; } }
+  @media screen and (max-width: 320px) {
+    header .menu {
+      width: 319px; } }
   @media screen and (max-width: 1024px) {
     header .menu .menu_dd {
       display: none; } }
@@ -552,7 +557,7 @@ header nav {
     @media screen and (max-width: 1024px) {
       header nav a {
         border: none;
-        padding: 2.3vh 0; }
+        padding: 3vh 0; }
         header nav a:hover, header nav a:active {
           box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.05); } }
 header .call {
@@ -570,7 +575,12 @@ header .call {
       -webkit-align-items: center;
       -moz-align-items: center;
       align-items: center;
-      margin: 0; } }
+      margin: 0;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between; } }
   header .call p {
     padding-bottom: 2vh;
     color: #e4b05c; }
@@ -1049,14 +1059,16 @@ section.houses.mobile .index_slider_houses .slick-track {
     margin: 0; }
     .form-bg .line .icon_img {
       top: -20px;
-      background: url("../images/form-clock-bg.png") no-repeat;
-      left: 42%; }
-      @media screen and (max-width: 1024px) {
-        .form-bg .line .icon_img {
-          left: 31%; } }
+      background: url("../images/form-clock-bg.png") no-repeat; }
       .form-bg .line .icon_img::before {
         left: 3%;
         background: url("../images/form-clock.png") no-repeat center; }
+        @media screen and (max-width: 425px) {
+          .form-bg .line .icon_img::before {
+            width: 80%;
+            height: 80%;
+            left: 9%;
+            top: 7%; } }
   .form-bg h2 {
     text-transform: uppercase;
     font-size: 30px;
