@@ -1,53 +1,50 @@
 /*
-Error: Undefined mixin 'flexbox'.
-        on line 2 of menu.sass, in `flexbox'
-        from line 2 of menu.sass
+Error: Properties are only allowed within rules, directives, mixin includes, or other properties.
+        on line 75 of menu.sass
 
-1: .flex__column
-2:   @include flexbox
-3:   @include flex-direction(column)
-4: 
-5: header
-6:   .logo_bg
-7:     position: relative
+70:         display: none
+71:     a
+72:       color: #e4b05c
+73:       font-size: 13px
+74:   #menu-primary //Был здесь NAV
+75:     width: 75%
+76:     margin: 0 auto
+77:     @media screen and (max-width: 1024px)
+78:       width: 100%
+79:       @include justify-content(space-between)
+80:     li //здесь было A
 
 Backtrace:
-menu.sass:2:in `flexbox'
-menu.sass:2
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
+menu.sass:75
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:24:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:35:in `css_tree'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
@@ -67,4 +64,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flexbox'.\A         on line 2 of menu.sass, in `flexbox'\A         from line 2 of menu.sass\A \A 1: .flex__column\A 2:   @include flexbox\A 3:   @include flex-direction(column)\A 4: \A 5: header\A 6:   .logo_bg\A 7:     position: relative"; }
+  content: "Error: Properties are only allowed within rules, directives, mixin includes, or other properties.\A         on line 75 of menu.sass\A \A 70:         display: none\A 71:     a\A 72:       color: #e4b05c\A 73:       font-size: 13px\A 74:   #menu-primary //Был здесь NAV\A 75:     width: 75%\A 76:     margin: 0 auto\A 77:     @media screen and (max-width: 1024px)\A 78:       width: 100%\A 79:       @include justify-content(space-between)\A 80:     li //здесь было A"; }

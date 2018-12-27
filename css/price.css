@@ -8,12 +8,12 @@ Error: Undefined mixin 'justify-content'.
 24:       line-height: 2rem
 25:       margin: 1.25% 0
 26:       @media screen and (max-width: 768px)
-27:         @include justify-content(center)
+27:         @include justify-content(space-between)
 28:         line-height: 2.5rem
 29:         &:last-child
-30:           width: 75%
-31:           margin: 8% auto 0
-32:           line-height: 1rem
+30:           margin: 8% auto 0
+31:           line-height: 1rem
+32:       a
 
 Backtrace:
 price.sass:27:in `justify-content'
@@ -107,4 +107,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'justify-content'.\A         on line 27 of price.sass, in `justify-content'\A         from line 27 of price.sass\A \A 22:       padding: 10px\A 23:     .flex__between\A 24:       line-height: 2rem\A 25:       margin: 1.25% 0\A 26:       @media screen and (max-width: 768px)\A 27:         @include justify-content(center)\A 28:         line-height: 2.5rem\A 29:         &:last-child\A 30:           width: 75%\A 31:           margin: 8% auto 0\A 32:           line-height: 1rem"; }
+  content: "Error: Undefined mixin 'justify-content'.\A         on line 27 of price.sass, in `justify-content'\A         from line 27 of price.sass\A \A 22:       padding: 10px\A 23:     .flex__between\A 24:       line-height: 2rem\A 25:       margin: 1.25% 0\A 26:       @media screen and (max-width: 768px)\A 27:         @include justify-content(space-between)\A 28:         line-height: 2.5rem\A 29:         &:last-child\A 30:           margin: 8% auto 0\A 31:           line-height: 1rem\A 32:       a"; }
