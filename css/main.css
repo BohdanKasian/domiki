@@ -557,7 +557,7 @@ header #menu-primary {
     @media screen and (max-width: 1024px) {
       header #menu-primary li {
         border: none;
-        padding: 3vh 0; }
+        padding: 10px 0; }
         header #menu-primary li:hover, header #menu-primary li:active {
           box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.05); } }
 header .call {
